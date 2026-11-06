@@ -4,17 +4,24 @@
   font-weight: 400;
   font-family: "Roboto";
   font-size: 18px;
-  background-image: url(img/);
+  background-image: url("img/welcome/Grid.svg"), url("img/welcome/Graph.svg");
+  background-size: auto, auto;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
 }
 .welcome .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+.welcome .header__logo {
+  margin: 65px 0 0 233px;
+}
 .welcome .header__nav {
   display: flex;
   gap: 31px;
   align-items: center;
+  margin: 65px 233px 0 0;
 }
 .welcome .header__link {
   color: #ffffff;
@@ -29,6 +36,13 @@
 }
 .welcome .link {
   text-decoration: none;
+}
+.welcome .home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
 }
 .welcome .home__title {
   color: #ffffff;

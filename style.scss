@@ -5,23 +5,31 @@
   font-weight: 400;
   font-family: "Roboto";
   font-size: 18px;
-  background-image: url(img/);
+  background-image: url("img/welcome/Grid.svg"), url("img/welcome/Graph.svg");
+  background-size: auto, auto;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
 
   .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 
     &__logo {
+      margin: 65px  0 0 233px;
     }
 
     &__nav {
       display: flex;
       gap: 31px;
       align-items: center;
+      margin: 65px 233px 0 0;
+      
     }
 
     &__item {
+      
     }
 
     &__link {
@@ -46,6 +54,15 @@
     text-decoration: none;
   }
   .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+
+    &__item {
+    }
+
     &__title {
       color: #ffffff;
     }
