@@ -1,1 +1,46 @@
-@import 'node_modules/modern-normalize/modern-normalize.css';
+@import "node_modules/modern-normalize/modern-normalize.css";
+.welcome {
+  background-color: #0e1a35;
+  font-weight: 400;
+  font-family: "Roboto";
+  font-size: 18px;
+  background-image: url(img/);
+}
+.welcome .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.welcome .header__nav {
+  display: flex;
+  gap: 31px;
+  align-items: center;
+}
+.welcome .header__link {
+  color: #ffffff;
+}
+.welcome .header__button {
+  width: 130px;
+  height: 48px;
+  border-radius: 24px;
+  background-color: rgba(85, 132, 255, 0);
+  border: 1px solid rgba(85, 132, 255, 0.3);
+  color: #5584ff;
+}
+.welcome .link {
+  text-decoration: none;
+}
+.welcome .home__title {
+  color: #ffffff;
+}
+.welcome .home__text {
+  color: #8492af;
+}
+.welcome .home__button {
+  width: 204px;
+  height: 48px;
+  border-radius: 24px;
+  background-color: #5584ff;
+  color: #ffffff;
+  border: none;
+}/*# sourceMappingURL=style.css.map */

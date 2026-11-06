@@ -1,0 +1,70 @@
+@import "node_modules/modern-normalize/modern-normalize.css";
+
+.welcome {
+  background-color: #0e1a35;
+  font-weight: 400;
+  font-family: "Roboto";
+  font-size: 18px;
+  background-image: url(img/);
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+    }
+
+    &__nav {
+      display: flex;
+      gap: 31px;
+      align-items: center;
+    }
+
+    &__item {
+    }
+
+    &__link {
+      color: #ffffff;
+    }
+
+    &__button {
+      width: 130px;
+      height: 48px;
+      border-radius: 24px;
+      background-color: rgba(85, 132, 255, 0);
+      border: 1px solid rgba(85, 132, 255, 0.3);
+      color: #5584ff;
+    }
+  }
+
+  .logo {
+  }
+  .nav {
+  }
+  .link {
+    text-decoration: none;
+  }
+  .home {
+    &__title {
+      color: #ffffff;
+    }
+
+    &__text {
+      color: #8492af;
+    }
+
+    &__button {
+      width: 204px;
+      height: 48px;
+      border-radius: 24px;
+      background-color: #5584ff;
+      color: #ffffff;
+      border: none;
+    }
+  }
+  .title {
+  }
+  .text {
+  }
+}
