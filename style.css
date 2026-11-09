@@ -1,32 +1,76 @@
 @import "node_modules/modern-normalize/modern-normalize.css";
-.welcome {
-  background-color: #0e1a35;
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 18px;
   font-weight: 400;
   font-family: "Roboto";
-  font-size: 18px;
-  background-image: url("img/welcome/Grid.svg"), url("img/welcome/Graph.svg");
-  background-size: auto, auto;
-  background-position: center, center;
-  background-repeat: no-repeat, no-repeat;
+  letter-spacing: 0px;
 }
-.welcome .header {
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+._container {
+  max-width: 1710px;
+  margin: 0px auto;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+.header__container {
   display: flex;
+  min-height: 200px;
   align-items: center;
-  justify-content: space-between;
 }
-.welcome .header__logo {
-  margin: 65px 0 0 233px;
-}
-.welcome .header__nav {
-  display: flex;
-  gap: 31px;
-  align-items: center;
-  margin: 65px 233px 0 0;
-}
-.welcome .header__link {
+.header__menu {
+  margin: 0px 0px 0px auto;
   color: #ffffff;
 }
-.welcome .header__button {
+.header__button {
+  margin: 0px 0px 0px 48px;
   width: 130px;
   height: 48px;
   border-radius: 24px;
@@ -34,27 +78,14 @@
   border: 1px solid rgba(85, 132, 255, 0.3);
   color: #5584ff;
 }
-.welcome .link {
-  text-decoration: none;
+
+.menu_item:not(:last-child) {
+  margin: 0px 51px 0px 0px;
 }
-.welcome .home {
+.menu__list {
+  flex-wrap: wrap;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  text-align: center;
 }
-.welcome .home__title {
-  color: #ffffff;
-}
-.welcome .home__text {
-  color: #8492af;
-}
-.welcome .home__button {
-  width: 204px;
-  height: 48px;
-  border-radius: 24px;
-  background-color: #5584ff;
-  color: #ffffff;
-  border: none;
+.menu__link {
+  line-height: 100%;
 }/*# sourceMappingURL=style.css.map */
