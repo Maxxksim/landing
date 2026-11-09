@@ -60,12 +60,12 @@ body {
 }
 ._ibg img {
   position: absolute;
+  inset: 0;
+  margin: auto;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .header {
@@ -128,6 +128,7 @@ body {
   font-size: 60px;
   font-weight: 100;
   line-height: 24%;
+  color: #ffffff;
 }
 .main-block__text {
   margin: 40px 0px 0px 0px;
@@ -146,15 +147,13 @@ body {
 .main-block__background {
   background-color: #0e1a35;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  inset: 0;
+  top: -260px;
 }
 
 .background__grid {
   z-index: 1;
 }
 .background__graph {
-  z-index: 2;
+  z-index: 4;
 }/*# sourceMappingURL=style.css.map */
