@@ -240,6 +240,7 @@ body {
 
   &__card {
     margin-top: 125px;
+    margin-bottom: 36px;
   }
 }
 .card {
@@ -273,5 +274,95 @@ body {
     border-radius: 24px;
     background-color: rgba(85, 132, 255, 0);
     border: 1px solid rgba(132, 146, 175, 0.3);
+  }
+}
+
+.page {
+  &__color-transition {
+  }
+}
+.color-transition {
+  &__background {
+    height: 166px;
+    background-image: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 166px;
+  }
+}
+
+.page {
+  &__needs {
+  }
+}
+.needs {
+  &__container {
+  }
+
+  &__body {
+    display: flex;
+    background-color: #f6f7fa;
+  }
+
+  &__column {
+  }
+
+  &__picture {
+    margin: 18px 0 77px 0;
+  }
+
+  &__card {
+  }
+}
+
+.needs-card {
+  max-width: 651px;
+  margin: 98px 38px 279px 264px;
+
+  &__title {
+    font-size: 60px;
+    color: #0e1a35;
+    font-weight: 100;
+    white-space: nowrap;
+    margin-bottom: 59px;
+    line-height: calc(14.4 / 60 * 100%);
+  }
+
+  &__text {
+    color: #8492af;
+    margin-bottom: 35px;
+    line-height: calc(30 / 18 * 100%);
+    max-width: 580px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+  }
+}
+
+.needs-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+}
+
+.list {
+  &__item {
+    display: flex;
+    gap: 19px;
+  }
+}
+
+.item {
+  &__check-icon {
+    width: 28px;
+    height: 28px;
+    color: rgb(88, 134, 255);
+  }
+
+  &__text {
+    line-height: calc(30 / 18 * 100%);
+    color: rgb(88, 134, 255);
   }
 }
