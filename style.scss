@@ -46,14 +46,18 @@ body {
 
 .wrapper {
   min-height: 100%;
-  overflow: hidden;
+  overflow: clip;
   display: flex;
   flex-direction: column;
 }
 
-._container {
-  max-width: 1710px;
-  margin: 0px auto;
+// ._container {
+// max-width: 1710px;
+// margin: 0px auto;
+// }
+
+[class*="__container"] {
+  padding-inline: 152px;
 }
 
 ._ibg {
@@ -122,10 +126,10 @@ body {
 }
 
 .page {
-  &__main-block {
+  &__hero {
   }
 }
-.main-block {
+.hero {
   position: relative;
 
   &__container {
@@ -295,9 +299,6 @@ body {
     background-color: #f6f7fa;
   }
 
-  &__column {
-  }
-
   &__picture {
     margin: 18px 0 77px 0;
   }
@@ -308,7 +309,7 @@ body {
 
 .needs-card {
   max-width: 651px;
-  margin: 98px 38px 279px 264px;
+  margin: 98px 38px 279px 0px;
 
   &__title {
     font-size: 60px;
