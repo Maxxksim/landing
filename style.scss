@@ -378,7 +378,7 @@ body {
     display: flex;
     width: 100%;
     align-items: center;
-    padding: 170px 0px 182px 1px;
+    padding: 167px 0px 182px 0px;
   }
 
   &__about {
@@ -391,6 +391,7 @@ body {
 
 .tasks {
   display: flex;
+  gap: 23px;
 
   &__progress {
     display: flex;
@@ -398,6 +399,12 @@ body {
 
     > :last-child {
       margin: 34px 0 0 27px;
+    }
+  }
+
+  &__completed {
+    > :last-child {
+      margin-top: 11px;
     }
   }
 
@@ -415,6 +422,7 @@ body {
   }
 
   &__title {
+    width: 393px;
     margin: 0px 0px 28px 0px;
     display: flex;
     align-items: center;
@@ -422,11 +430,12 @@ body {
   }
 }
 
-.title {
+.task-title {
   &__text {
-    margin-right: 20px;
+    margin-right: 26px;
     color: #ffffff;
     font-size: 31;
+    font-weight: 500;
     line-height: calc(12 / 31 * 100%);
   }
 
@@ -442,6 +451,7 @@ body {
     border-right: 3px solid #8492af;
     transform: rotate(45deg);
     border-radius: 10%;
+    margin-left: auto;
   }
 }
 
@@ -450,20 +460,21 @@ body {
   max-height: 334px;
 
   &__title {
-    margin-top: 30px;
+    margin-top: 48px;
     font-size: 60px;
     font-weight: 100;
     color: #ffffff;
   }
 
   &__text {
-    margin-top: 70px;
+    margin-top: 47px;
+    height: 138px;
     color: #8492af;
     line-height: calc(30 / 18 * 100%);
   }
 
   &__buttons {
-    margin-top: 26px;
+    margin-top: 47px;
     margin-bottom: 11px;
     display: flex;
     gap: 15px;
@@ -472,19 +483,18 @@ body {
 
 .buttons {
   &__item {
-    width: 39px;
-    height: 39px;
+    width: 35px;
+    height: 35px;
     border: 1px solid #8492af;
     border-radius: 50%;
-
     position: relative;
   }
 
   &__previous,
   &__next {
     background-color: #8492af;
-    width: 13px;
-    height: 13px;
+    width: 10px;
+    height: 10px;
 
     position: absolute;
     top: 50%;
@@ -541,6 +551,22 @@ body {
     height: 6px;
     background-color: #8492af;
     border-radius: 50%;
+  }
+}
+
+.task-drop-zone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 393px;
+  height: 101px;
+  border: 1px dashed #8492af;
+
+  &__placeholder {
+    color: #8492af;
+    font-size: 20px;
+    font-weight: 500;
   }
 }
 
