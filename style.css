@@ -141,13 +141,15 @@ body {
 }
 
 .grid-graph-background {
-  background-image: url("img/main/background/Grid.svg"), url("img/main/background/Graph.svg");
+  background-image: url("img/main/background/Graph.svg"), linear-gradient(90deg, #0e1a35 0%, #0e1a35 10%, rgba(14, 26, 53, 0) 40%, rgba(14, 26, 53, 0) 60%, #0e1a35 90%, #0e1a35 100%), url("img/main/background/Grid.svg");
   background-repeat: no-repeat, no-repeat;
-  background-repeat: no-repeat;
-  background-size: auto;
+  background-size: auto, 100% 100%, auto;
   background-position: center center;
-  background-position: center 82px, center 200px;
   background-color: #0e1a35;
+}
+
+.grid-graph-background_position {
+  background-position: center 200px, center top, center 82px;
 }
 
 .page__features {
@@ -284,4 +286,195 @@ body {
 .item__text {
   line-height: 166.6666666667%;
   color: rgb(88, 134, 255);
+}
+
+.drag-drop__body {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 170px 0px 182px 1px;
+}
+.drag-drop__about {
+  align-self: flex-start;
+  margin-left: 178px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tasks {
+  display: flex;
+}
+.tasks__progress {
+  display: flex;
+  flex-direction: column;
+}
+.tasks__progress > :last-child {
+  margin: 34px 0 0 27px;
+}
+.tasks__progress, .tasks__completed {
+  display: flex;
+  flex-direction: column;
+}
+.tasks__progress > :nth-child(3), .tasks__completed > :nth-child(3) {
+  margin-top: 11px;
+}
+.tasks__title {
+  margin: 0px 0px 28px 0px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.title__text {
+  margin-right: 20px;
+  color: #ffffff;
+  font-size: 31;
+  line-height: 38.7096774194%;
+}
+.title__counter {
+  margin-right: 202px;
+  color: #8492af;
+}
+.title__arrow {
+  width: 13px;
+  height: 13px;
+  border-top: 3px solid #8492af;
+  border-right: 3px solid #8492af;
+  transform: rotate(45deg);
+  border-radius: 10%;
+}
+
+.about {
+  max-width: 518px;
+  max-height: 334px;
+}
+.about__title {
+  margin-top: 30px;
+  font-size: 60px;
+  font-weight: 100;
+  color: #ffffff;
+}
+.about__text {
+  margin-top: 70px;
+  color: #8492af;
+  line-height: 166.6666666667%;
+}
+.about__buttons {
+  margin-top: 26px;
+  margin-bottom: 11px;
+  display: flex;
+  gap: 15px;
+}
+
+.buttons__item {
+  width: 39px;
+  height: 39px;
+  border: 1px solid #8492af;
+  border-radius: 50%;
+  position: relative;
+}
+.buttons__previous, .buttons__next {
+  background-color: #8492af;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.buttons__previous {
+  left: calc(50% + 2px);
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+.buttons__next {
+  left: calc(50% - 2px);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0%);
+}
+
+.task-card {
+  display: flex;
+  border: 1px solid #8492af;
+  align-items: center;
+  width: 393px;
+  height: 101px;
+  background-color: #ffffff;
+}
+.task-card__icon {
+  margin: 0 21px 0 30px;
+}
+.task-card__title {
+  margin-bottom: 10px;
+}
+.task-card__status {
+  color: #808080;
+  font-size: 10px;
+}
+.task-card__kebab-menu {
+  margin-left: auto;
+  margin-right: 28px;
+}
+
+.kebab-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.kebab-menu__dot {
+  width: 6px;
+  height: 6px;
+  background-color: #8492af;
+  border-radius: 50%;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(85, 132, 255);
+  border-radius: 50%;
+}
+.icon__name-letter {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+}
+.status__icon {
+  margin-right: 6px;
+}
+.status {
+  color: #8492af;
+}
+
+.clock {
+  width: 14px;
+  height: 14px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  position: relative;
+}
+.clock__minute-hand, .clock__hour-hand {
+  position: absolute;
+  left: 45%;
+  bottom: 45%;
+  width: 1px;
+  height: 5px;
+  background-color: currentColor;
+  transform-origin: bottom center;
+}
+.clock__hour-hand {
+  left: calc(50% - 1px);
+  transform: rotate(90deg);
+}
+.clock__minute-hand {
+  bottom: calc(50% - 1px);
+  transform: rotate(0deg);
+}
+
+.status_delay {
+  color: #e85c8a;
 }/*# sourceMappingURL=style.css.map */

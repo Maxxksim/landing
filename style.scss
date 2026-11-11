@@ -164,15 +164,31 @@ body {
 
 .grid-graph-background {
   background-image:
-    url("img/main/background/Grid.svg"), url("img/main/background/Graph.svg");
+    url("img/main/background/Graph.svg"),
+    linear-gradient(
+      90deg,
+      #0e1a35 0%,
+      #0e1a35 10%,
+      rgba(14, 26, 53, 0) 40%,
+      rgba(14, 26, 53, 0) 60%,
+      #0e1a35 90%,
+      #0e1a35 100%
+    ),
+    url("img/main/background/Grid.svg");
   background-repeat: no-repeat, no-repeat;
-  background-repeat: no-repeat;
-  background-size: auto;
+  background-size:
+    auto,
+    100% 100%,
+    auto;
   background-position: center center;
-  background-position:
-    center 82px,
-    center 200px;
   background-color: #0e1a35;
+}
+
+.grid-graph-background_position {
+  background-position:
+    center 200px,
+    center top,
+    center 82px;
 }
 
 .page {
@@ -351,4 +367,244 @@ body {
     line-height: calc(30 / 18 * 100%);
     color: rgb(88, 134, 255);
   }
+}
+
+.page {
+  &__drag-drop {
+  }
+}
+.drag-drop {
+  &__body {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 170px 0px 182px 1px;
+  }
+
+  &__about {
+    align-self: flex-start;
+    margin-left: 178px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.tasks {
+  display: flex;
+
+  &__progress {
+    display: flex;
+    flex-direction: column;
+
+    > :last-child {
+      margin: 34px 0 0 27px;
+    }
+  }
+
+  &__progress,
+  &__completed {
+    display: flex;
+    flex-direction: column;
+
+    > :nth-child(3) {
+      margin-top: 11px;
+    }
+  }
+
+  &__card {
+  }
+
+  &__title {
+    margin: 0px 0px 28px 0px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+.title {
+  &__text {
+    margin-right: 20px;
+    color: #ffffff;
+    font-size: 31;
+    line-height: calc(12 / 31 * 100%);
+  }
+
+  &__counter {
+    margin-right: 202px;
+    color: #8492af;
+  }
+
+  &__arrow {
+    width: 13px;
+    height: 13px;
+    border-top: 3px solid #8492af;
+    border-right: 3px solid #8492af;
+    transform: rotate(45deg);
+    border-radius: 10%;
+  }
+}
+
+.about {
+  max-width: 518px;
+  max-height: 334px;
+
+  &__title {
+    margin-top: 30px;
+    font-size: 60px;
+    font-weight: 100;
+    color: #ffffff;
+  }
+
+  &__text {
+    margin-top: 70px;
+    color: #8492af;
+    line-height: calc(30 / 18 * 100%);
+  }
+
+  &__buttons {
+    margin-top: 26px;
+    margin-bottom: 11px;
+    display: flex;
+    gap: 15px;
+  }
+}
+
+.buttons {
+  &__item {
+    width: 39px;
+    height: 39px;
+    border: 1px solid #8492af;
+    border-radius: 50%;
+
+    position: relative;
+  }
+
+  &__previous,
+  &__next {
+    background-color: #8492af;
+    width: 13px;
+    height: 13px;
+
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &__previous {
+    left: calc(50% + 2px);
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+  }
+
+  &__next {
+    left: calc(50% - 2px);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0%);
+  }
+}
+
+.task-card {
+  display: flex;
+  border: 1px solid #8492af;
+  align-items: center;
+  width: 393px;
+  height: 101px;
+  background-color: #ffffff;
+
+  &__icon {
+    margin: 0 21px 0 30px;
+  }
+
+  &__meta {
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__status {
+    color: #808080;
+    font-size: 10px;
+  }
+
+  &__kebab-menu {
+    margin-left: auto;
+    margin-right: 28px;
+  }
+}
+.kebab-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  &__dot {
+    width: 6px;
+    height: 6px;
+    background-color: #8492af;
+    border-radius: 50%;
+  }
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(85, 132, 255);
+  border-radius: 50%;
+
+  &__name-letter {
+    font-weight: 700;
+    color: #ffffff;
+  }
+}
+
+.status {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+  }
+}
+
+$delayedTaskStatusColor: #e85c8a;
+
+.status {
+  &__icon {
+    margin-right: 6px;
+  }
+  color: #8492af;
+}
+
+.clock {
+  width: 14px;
+  height: 14px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  position: relative;
+
+  &__minute-hand,
+  &__hour-hand {
+    position: absolute;
+    left: 45%;
+    bottom: 45%;
+    width: 1px;
+    height: 5px;
+    background-color: currentColor;
+    transform-origin: bottom center;
+  }
+
+  &__hour-hand {
+    left: calc(50% - 1px);
+    transform: rotate(90deg);
+  }
+
+  &__minute-hand {
+    bottom: calc(50% - 1px);
+    transform: rotate(0deg);
+  }
+}
+
+.status_delay {
+  color: $delayedTaskStatusColor;
 }
