@@ -51,13 +51,9 @@ body {
   flex-direction: column;
 }
 
-// ._container {
-// max-width: 1710px;
-// margin: 0px auto;
-// }
-
 [class*="__container"] {
-  padding-inline: 152px;
+  max-width: 1710px;
+  margin-inline: auto;
 }
 
 ._ibg {
@@ -66,9 +62,10 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
+    bottom: 0;
+    right: 0;
     object-fit: contain;
+    object-position: right bottom;
   }
 }
 
@@ -236,7 +233,7 @@ body {
 
   &__card {
     margin-top: 125px;
-    margin-bottom: 36px;
+    margin-bottom: 37px;
   }
 }
 .card {
@@ -288,29 +285,25 @@ body {
 
 .page {
   &__needs {
+    background-color: #f6f7fa;
   }
 }
 .needs {
-  &__container {
-  }
+  position: relative;
+  min-height: 683px;
 
   &__body {
-    display: flex;
-    background-color: #f6f7fa;
+    padding: 98px 0px 279px 122px;
   }
 
   &__picture {
-    margin: 18px 0 77px 0;
-  }
-
-  &__card {
+    position: absolute;
+    right: 0;
+    top: 18px;
   }
 }
 
 .needs-card {
-  max-width: 651px;
-  margin: 98px 38px 279px 0px;
-
   &__title {
     font-size: 60px;
     color: #0e1a35;
