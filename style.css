@@ -399,6 +399,7 @@ body {
 }
 
 .task-card {
+  position: relative;
   display: flex;
   border: 1px solid #8492af;
   align-items: center;
@@ -413,12 +414,28 @@ body {
   margin-bottom: 10px;
 }
 .task-card__status {
-  color: #808080;
   font-size: 10px;
 }
 .task-card__kebab-menu {
   margin-left: auto;
   margin-right: 28px;
+}
+.task-card__captured-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -40px;
+  bottom: -53px;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-color: rgba(132, 146, 175, 0.2);
+  border: 10px solid rgba(132, 146, 175, 0.2);
+}
+.task-card__hand {
+  width: 31px;
+  height: auto;
 }
 
 .kebab-menu {
@@ -461,22 +478,25 @@ body {
   color: #ffffff;
 }
 
-.status {
+.task-status {
   display: flex;
   align-items: center;
 }
-.status__icon {
+.task-status__icon {
   margin-right: 6px;
 }
-.status {
+.task-status {
   color: #8492af;
 }
 
-.clock {
+.task-status__icon {
   width: 14px;
   height: 14px;
   border: 1px solid currentColor;
   border-radius: 50%;
+}
+
+.clock {
   position: relative;
 }
 .clock__minute-hand, .clock__hour-hand {
@@ -499,4 +519,31 @@ body {
 
 .status_delay {
   color: #e85c8a;
+}
+
+.task-status-icon-completed {
+  position: relative;
+}
+.task-status-icon-completed__first-stick, .task-status-icon-completed__second-stick {
+  position: absolute;
+  background-color: currentColor;
+  transform-origin: bottom center;
+}
+.task-status-icon-completed__first-stick {
+  width: 1px;
+  height: 6px;
+  bottom: 32%;
+  left: 40%;
+  transform: rotate(45deg);
+}
+.task-status-icon-completed__second-stick {
+  width: 1px;
+  height: 3px;
+  left: 44%;
+  bottom: 34%;
+  transform: rotate(-50deg);
+}
+
+.task-status_completed {
+  color: #008000;
 }
