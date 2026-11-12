@@ -64,8 +64,8 @@ body {
     height: 100%;
     bottom: 0;
     right: 0;
+    z-index: -1;
     object-fit: contain;
-    object-position: right bottom;
   }
 }
 
@@ -550,11 +550,11 @@ body {
     position: absolute;
     right: -40px;
     bottom: -53px;
-    width: 96px;
-    height: 96px;
+    width: 86px;
+    height: 86px;
     border-radius: 50%;
-    background-color: rgba(132, 146, 175, 0.2);
-    border: 10px solid rgba(132, 146, 175, 0.2);
+    background-color: rgba(132, 146, 175, 0.3);
+    box-shadow: 0 0 0 10px rgba(132, 146, 175, 0.2);
   }
 
   &__hand {
@@ -686,6 +686,92 @@ $completedTaskStatusColor: #008000;
   }
 }
 
+//latyout section
+
 .task-status_completed {
   color: $completedTaskStatusColor;
+}
+
+.layout {
+  &__body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__intoduction {
+    text-align: center;
+    padding: 106px 359px 163px 359px;
+  }
+
+  &__about {
+    display: flex;
+    padding: 0px 153px 0px 153px;
+
+    > :last-child {
+      padding: 456px 0px 73px 0px;
+      margin-left: auto;
+    }
+  }
+
+  &__card {
+  }
+}
+
+.page-introduction {
+  &__title {
+    font-size: 60px;
+    color: #0e1a35;
+    font-weight: 100;
+  }
+
+  &__text {
+    margin-top: 59px;
+    color: #8492af;
+    line-height: calc(30 / 18 * 100%);
+  }
+}
+.layout-card {
+  &__line-dot {
+    margin-top: 15px;
+  }
+}
+
+.line-dot {
+  display: flex;
+  align-items: center;
+  width: 661px;
+  position: relative;
+
+  &__line {
+    width: 631px;
+    height: 2px;
+    background-color: #5584ff;
+  }
+
+  &__dot {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #5584ff;
+    box-shadow: 0 0 0 10px rgba(85, 132, 255, 0.5);
+  }
+}
+
+.card-introduction__text-width-245 {
+  width: 245px;
+}
+
+.layout-card-reversed {
+  > :nth-child(1),
+  > :nth-child(3) {
+    margin-left: auto;
+    text-align: right;
+  }
+
+  > :nth-child(2) {
+    transform: rotate(180deg);
+  }
 }

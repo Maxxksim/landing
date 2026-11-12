@@ -64,10 +64,9 @@ body {
   height: 100%;
   bottom: 0;
   right: 0;
+  z-index: -1;
   -o-object-fit: contain;
      object-fit: contain;
-  -o-object-position: right bottom;
-     object-position: right bottom;
 }
 
 .header {
@@ -428,11 +427,11 @@ body {
   position: absolute;
   right: -40px;
   bottom: -53px;
-  width: 96px;
-  height: 96px;
+  width: 86px;
+  height: 86px;
   border-radius: 50%;
-  background-color: rgba(132, 146, 175, 0.2);
-  border: 10px solid rgba(132, 146, 175, 0.2);
+  background-color: rgba(132, 146, 175, 0.3);
+  box-shadow: 0 0 0 10px rgba(132, 146, 175, 0.2);
 }
 .task-card__hand {
   width: 31px;
@@ -547,4 +546,70 @@ body {
 
 .task-status_completed {
   color: #008000;
+}
+
+.layout__body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.layout__intoduction {
+  text-align: center;
+  padding: 106px 359px 163px 359px;
+}
+.layout__about {
+  display: flex;
+  padding: 0px 153px 0px 153px;
+}
+.layout__about > :last-child {
+  padding: 456px 0px 73px 0px;
+  margin-left: auto;
+}
+.page-introduction__title {
+  font-size: 60px;
+  color: #0e1a35;
+  font-weight: 100;
+}
+.page-introduction__text {
+  margin-top: 59px;
+  color: #8492af;
+  line-height: 166.6666666667%;
+}
+
+.layout-card__line-dot {
+  margin-top: 15px;
+}
+
+.line-dot {
+  display: flex;
+  align-items: center;
+  width: 661px;
+  position: relative;
+}
+.line-dot__line {
+  width: 631px;
+  height: 2px;
+  background-color: #5584ff;
+}
+.line-dot__dot {
+  position: absolute;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #5584ff;
+  box-shadow: 0 0 0 10px rgba(85, 132, 255, 0.5);
+}
+
+.card-introduction__text-width-245 {
+  width: 245px;
+}
+
+.layout-card-reversed > :nth-child(1),
+.layout-card-reversed > :nth-child(3) {
+  margin-left: auto;
+  text-align: right;
+}
+.layout-card-reversed > :nth-child(2) {
+  transform: rotate(180deg);
 }
