@@ -693,6 +693,8 @@ $completedTaskStatusColor: #008000;
 }
 
 .layout {
+  background-color: #f6f7fa;
+
   &__body {
     position: relative;
     display: flex;
@@ -701,16 +703,41 @@ $completedTaskStatusColor: #008000;
 
   &__intoduction {
     text-align: center;
-    padding: 106px 359px 163px 359px;
+    padding: 106px 359px 0px 359px;
   }
 
   &__about {
+    position: relative;
+    z-index: 1;
     display: flex;
-    padding: 0px 153px 0px 153px;
+    width: auto;
+    height: auto;
+    justify-content: center;
+
+    > :nth-child(2) {
+      padding: 163px 0 0px 154px;
+    }
 
     > :last-child {
-      padding: 456px 0px 73px 0px;
+      padding: 457px 154px 158px 0;
       margin-left: auto;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 72px;
+    z-index: 0;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
     }
   }
 
