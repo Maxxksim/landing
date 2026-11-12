@@ -202,17 +202,7 @@ body {
 .card__icon {
   width: 92px;
   height: 92px;
-}
-.card__title {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 383.3333333333%;
-  color: #0e1a35;
-}
-.card__text {
-  margin: 28px 0px 0px 0px;
-  color: #8492af;
-  line-height: 166.6666666667%;
+  margin-bottom: 60px;
 }
 .card__button {
   margin: 41px 0px 0px 0px;
@@ -221,6 +211,17 @@ body {
   border-radius: 24px;
   background-color: rgba(85, 132, 255, 0);
   border: 1px solid rgba(132, 146, 175, 0.3);
+}
+
+.card-introduction__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0e1a35;
+}
+.card-introduction__text {
+  margin: 28px 0px 0px 0px;
+  color: #8492af;
+  line-height: 166.6666666667%;
 }
 
 .color-transition__background {
