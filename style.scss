@@ -41,7 +41,6 @@ body {
   font-size: 18px;
   font-weight: 400;
   font-family: "Roboto";
-  letter-spacing: 0px;
 }
 
 .wrapper {
@@ -388,10 +387,6 @@ $gradientTransitionWhiteToGrayBlue: linear-gradient(
   }
 }
 
-.page {
-  &__drag-drop {
-  }
-}
 .drag-drop {
   &__body {
     display: flex;
@@ -435,9 +430,6 @@ $gradientTransitionWhiteToGrayBlue: linear-gradient(
     > :nth-child(3) {
       margin-top: 11px;
     }
-  }
-
-  &__card {
   }
 
   &__title {
@@ -544,9 +536,6 @@ $gradientTransitionWhiteToGrayBlue: linear-gradient(
     margin: 0 21px 0 30px;
   }
 
-  &__meta {
-  }
-
   &__title {
     margin-bottom: 10px;
   }
@@ -609,46 +598,63 @@ $gradientTransitionWhiteToGrayBlue: linear-gradient(
   }
 }
 
-.icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  background-color: rgb(85, 132, 255);
-  border-radius: 50%;
-
-  &__name-letter {
-    font-weight: 700;
-    color: #ffffff;
-  }
-}
-
-$delayedTaskStatusColor: #e85c8a;
+$delayedDaysTaskStatusColor: #e85c8a;
 $completedTaskStatusColor: #008000;
+$leftDaysTaskStatusColor: #8492af;
 
 .task-status {
   display: flex;
   align-items: center;
+  color: var(--statusColor);
 
   &__icon {
     margin-right: 6px;
   }
-  color: #8492af;
+
+  &_delayed {
+    --statusColor: #{$delayedDaysTaskStatusColor};
+  }
+
+  &_completed {
+    --statusColor: #{$completedTaskStatusColor};
+  }
+
+  &_left {
+    --statusColor: #{$leftDaysTaskStatusColor};
+  }
 }
 
-.task-status__icon {
-  width: 14px;
-  height: 14px;
-  border: 1px solid currentColor;
-  border-radius: 50%;
-}
+.icon {
+  &_clock,
+  &_completed,
+  &_profile {
+    border-radius: 50%;
+  }
 
-.clock {
-  position: relative;
+  &_clock,
+  &_completed {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    border: 1px solid currentColor;
+  }
 
-  &__minute-hand,
-  &__hour-hand {
+  &_profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #5584ff;
+  }
+
+  &_profile &__name-letter {
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  &_clock &__minute-hand,
+  &_clock &__hour-hand {
     position: absolute;
     left: 45%;
     bottom: 45%;
@@ -658,33 +664,17 @@ $completedTaskStatusColor: #008000;
     transform-origin: bottom center;
   }
 
-  &__hour-hand {
+  &_clock &__hour-hand {
     left: calc(50% - 1px);
     transform: rotate(90deg);
   }
 
-  &__minute-hand {
+  &_clock &__minute-hand {
     bottom: calc(50% - 1px);
     transform: rotate(0deg);
   }
-}
 
-.status_delay {
-  color: $delayedTaskStatusColor;
-}
-
-.task-status-icon-completed {
-  position: relative;
-
-  &__first-stick,
-  &__second-stick {
-    position: absolute;
-
-    background-color: currentColor;
-    transform-origin: bottom center;
-  }
-
-  &__first-stick {
+  &_completed &__first-stick {
     width: 1px;
     height: 6px;
 
@@ -694,20 +684,24 @@ $completedTaskStatusColor: #008000;
     transform: rotate(45deg);
   }
 
-  &__second-stick {
+  &_completed &__second-stick {
     width: 1px;
     height: 3px;
     left: 44%;
     bottom: 34%;
     transform: rotate(-50deg);
   }
+
+  &_completed &__first-stick,
+  &_completed &__second-stick {
+    position: absolute;
+
+    background-color: currentColor;
+    transform-origin: bottom center;
+  }
 }
 
 //latyout section
-
-.task-status_completed {
-  color: $completedTaskStatusColor;
-}
 
 .layout {
   position: relative;
@@ -758,9 +752,6 @@ $completedTaskStatusColor: #008000;
       object-fit: contain;
       object-position: center;
     }
-  }
-
-  &__card {
   }
 }
 
