@@ -181,13 +181,13 @@ body {
     auto;
   background-position: center center;
   background-color: #0e1a35;
-}
 
-.grid-graph-background_position {
-  background-position:
-    center 200px,
-    center top,
-    center 82px;
+  &_position-1 {
+    background-position:
+      center 200px,
+      center top,
+      center 82px;
+  }
 }
 
 .page {
@@ -275,6 +275,8 @@ body {
 }
 
 .card-introduction {
+  position: relative;
+  z-index: 100;
   &__title {
     font-size: 24px;
     font-weight: 700;
@@ -285,6 +287,10 @@ body {
     margin: 28px 0px 0px 0px;
     color: #8492af;
     line-height: calc(30 / 18 * 100%);
+
+    &_width-245 {
+      width: 245px;
+    }
   }
 }
 
@@ -304,11 +310,11 @@ $gradientTransitionWhiteToGrayBlue: linear-gradient(
     background-size: 100% 166px;
   }
 
-  &-gray-to-white {
+  &_gray-to-white {
     --bgColor: #{$gradientTransitionGrayToWhite};
   }
 
-  &-white-to-gray-blue {
+  &_white-to-gray-blue {
     --bgColor: #{$gradientTransitionWhiteToGrayBlue};
   }
 
@@ -768,9 +774,22 @@ $leftDaysTaskStatusColor: #8492af;
     line-height: calc(30 / 18 * 100%);
   }
 }
+
 .layout-card {
   &__line-dot {
     margin-top: 15px;
+  }
+
+  &_reversed {
+    > :nth-child(1),
+    > :nth-child(3) {
+      margin-left: auto;
+      text-align: right;
+    }
+
+    > :nth-child(2) {
+      transform: rotate(180deg);
+    }
   }
 }
 
@@ -794,21 +813,5 @@ $leftDaysTaskStatusColor: #8492af;
     border-radius: 50%;
     background-color: #5584ff;
     box-shadow: 0 0 0 10px rgba(85, 132, 255, 0.5);
-  }
-}
-
-.card-introduction__text-width-245 {
-  width: 245px;
-}
-
-.layout-card-reversed {
-  > :nth-child(1),
-  > :nth-child(3) {
-    margin-left: auto;
-    text-align: right;
-  }
-
-  > :nth-child(2) {
-    transform: rotate(180deg);
   }
 }
