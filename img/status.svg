@@ -11,8 +11,17 @@
     d="M12 5.5V12H18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
 
-<symbol  id="icon-cancel" viewBox="0 0 24 24">
-  <path 
-    fill="currentColor" fill-rule="evenodd" d="M936,120a12,12,0,1,1,12-12A12,12,0,0,1,936,120Zm0-22a10,10,0,1,0,10,10A10,10,0,0,0,936,98Zm4.706,14.706a0.951,0.951,0,0,1-1.345,0l-3.376-3.376-3.376,3.376a0.949,0.949,0,1,1-1.341-1.342l3.376-3.376-3.376-3.376a0.949,0.949,0,1,1,1.341-1.342l3.376,3.376,3.376-3.376a0.949,0.949,0,1,1,1.342,1.342l-3.376,3.376,3.376,3.376A0.95,0.95,0,0,1,940.706,112.706Z" transform="translate(-924 -96)"/>
+<symbol id="icon-cancel" viewBox="0 0 24 24">
+  <g
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <circle cx="12" cy="12" r="10" />
+    <path d="M15.5355 15.5355L8.46447 8.46447M15.5355 8.46447L8.46447 15.5355" />
+  </g>
 </symbol>
+
 </svg>

@@ -35,7 +35,7 @@
               </li>
             </ul>
           </nav>
-          <button class="header__button button">Login</button>
+          <button class="header__button">Login</button>
         </div>
       </header>
       <main class="page">
@@ -47,7 +47,7 @@
               <div class="hero__body">
                 <h1 class="hero__title">Grow Your business with Merkury</h1>
                 <div class="hero__text">Your partner in crime!</div>
-                <button class="hero__button">Get started</button>
+                <button class="hero__button button">Get started</button>
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@
                   </div>
                 </div>
 
-                <div class="features__column_line">
+                <div class="features__column features__column_line">
                   <div class="features__line-block line-block">
                     <div class="line-block__line"></div>
                   </div>
@@ -124,7 +124,7 @@
                   </div>
                 </div>
 
-                <div class="features__column_line">
+                <div class="features__column features__column_line">
                   <div class="features__line-block line-block">
                     <div class="line-block__line"></div>
                   </div>
@@ -182,7 +182,7 @@
                 <ul class="needs-card__list list color color_blue">
                   <li class="list__item item">
                     <svg
-                      class="task-status__icon status-icon status-icon_size-l"
+                      class="task-status__icon status-icon status-icon_size_l"
                     >
                       <use href="img/status.svg#icon-checkmark"></use>
                     </svg>
@@ -192,7 +192,7 @@
                   </li>
                   <li class="list__item item">
                     <svg
-                      class="task-status__icon status-icon status-icon_size-l"
+                      class="task-status__icon status-icon status-icon_size_l"
                     >
                       <use href="img/status.svg#icon-checkmark"></use>
                     </svg>
@@ -232,7 +232,7 @@
                         <h4 class="task-card__title">New logo for Apple</h4>
                         <div class="task-card__status color color_gray">
                           <svg
-                            class="task-status__icon status-icon status-icon_size-s"
+                            class="task-status__icon status-icon status-icon_size_s"
                           >
                             <use href="img/status.svg#icon-clock"></use>
                           </svg>
@@ -253,7 +253,7 @@
                         <h4 class="task-card__title">Daily UI Kit</h4>
                         <div class="task-card__status color color_gray">
                           <svg
-                            class="task-status__icon status-icon status-icon_size-s"
+                            class="task-status__icon status-icon status-icon_size_s"
                           >
                             <use href="img/status.svg#icon-clock"></use>
                           </svg>
@@ -274,7 +274,7 @@
                         <h4 class="task-card__title">Business Cards</h4>
                         <div class="task-card__status color color_red">
                           <svg
-                            class="task-status__icon status-icon status-icon_size-s"
+                            class="task-status__icon status-icon status-icon_size_s"
                           >
                             <use href="img/status.svg#icon-clock"></use>
                           </svg>
@@ -310,7 +310,7 @@
                         </h4>
                         <div class="task-card__status color color_green">
                           <svg
-                            class="task-status__icon status-icon status-icon_size-s"
+                            class="task-status__icon status-icon status-icon_size_s"
                           >
                             <use href="img/status.svg#icon-checkmark"></use>
                           </svg>
@@ -332,7 +332,7 @@
                         <h4 class="task-card__title">Iconset vol. 1</h4>
                         <div class="task-card__status color color_green">
                           <svg
-                            class="task-status__icon status-icon status-icon_size-s"
+                            class="task-status__icon status-icon status-icon_size_s"
                           >
                             <use href="img/status.svg#icon-checkmark"></use>
                           </svg>
@@ -377,13 +377,19 @@
         <section class="page__layout layout">
           <div class="layout__container">
             <div class="layout__body">
-              <div class="layout__introduction page-introduction">
-                <h2 class="page-introduction__title">Powerfull PSD Template</h2>
-                <div class="page-introduction__text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+              <div class="layout__introduction section-introduction">
+                <div class="layout__title">
+                  <h2 class="section-introduction__title">
+                    Powerfull PSD Template
+                  </h2>
+                </div>
+                <div class="layout__text">
+                  <div class="section-introduction__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </div>
                 </div>
               </div>
 
@@ -430,10 +436,172 @@
         </section>
 
         <div
-          class="gradient-transition gradient-transition_white-to-gray-blue gradient-transition_elevated"
+          class="gradient-transition gradient-transition_gray-to-white gradient-transition_elevated gradient-transition_rotated"
         >
           <div class="gradient-transition__background"></div>
         </div>
+
+        <section class="page__pricing pricing">
+          <div class="pricing__container">
+            <div class="pricing__body">
+              <div class="pricing__title section-introduction">
+                <h2 class="section-introduction__title">Check our pricing!</h2>
+              </div>
+
+              <div class="pricing__plans">
+                <article class="pricing__plan plan">
+                  <h3 class="plan__name">BRONZE PLAN</h3>
+                  <div class="plan__price price">
+                    <div class="price__currency">$</div>
+                    <div class="price__amount">19</div>
+                    <div class="price__per-period">/mon</div>
+                  </div>
+                  <ul class="plan__list">
+                    <li class="plan__item">
+                      <svg
+                        class="plan__icon status-icon status-icon_size_m color color_blue"
+                      >
+                        <use href="img/status.svg#icon-checkmark"></use>
+                      </svg>
+                      <div class="plan__text">Lorem ipsum dolor sit am</div>
+                    </li>
+                    <li class="plan__item">
+                      <svg
+                        class="plan__icon status-icon status-icon_size_m color color_blue"
+                      >
+                        <use href="img/status.svg#icon-checkmark"></use>
+                      </svg>
+                      <div class="plan__text">Lorem ipsum dolor sit am</div>
+                    </li>
+                    <li class="plan__item">
+                      <svg
+                        class="plan__icon status-icon status-icon_size_m color color_raspberry-red"
+                      >
+                        <use href="img/status.svg#icon-cancel"></use>
+                      </svg>
+                      <div class="plan__text">Lorem ipsum dolor sit am</div>
+                    </li>
+                    <li class="plan__item">
+                      <svg
+                        class="plan__icon status-icon status-icon_size_m color color_raspberry-red"
+                      >
+                        <use href="img/status.svg#icon-cancel"></use>
+                      </svg>
+                      <div class="plan__text">Lorem ipsum dolor sit am</div>
+                    </li>
+                  </ul>
+                </article>
+
+                <article class="pricing__plan plan">
+                  <h3 class="plan__name">SILVER PLAN</h3>
+                  <div class="plan__price price">
+                    <div class="price__currency">$</div>
+                    <div class="price__amount">49</div>
+                    <div class="price__per-period">/mon</div>
+                  </div>
+                  <ul class="plan__list">
+                    <li class="plan__item">
+                      <svg
+                        class="plan__icon status-icon status-icon_size_m color color_blue"
+                      >
+                        <use href="img/status.svg#icon-checkmark"></use>
+                      </svg>
+                      <div class="plan__text">Lorem ipsum dolor sit am</div>
+                    </li>
+                    <li class="plan__item">
+                      <svg
+                        class="plan__icon status-icon status-icon_size_m color color_blue"
+                      >
+                        <use href="img/status.svg#icon-checkmark"></use>
+                      </svg>
+                      <div class="plan__text">Lorem ipsum dolor sit am</div>
+                    </li>
+                    <li class="plan__item">
+                      <svg
+                        class="plan__icon status-icon status-icon_size_m color color_blue"
+                      >
+                        <use href="img/status.svg#icon-checkmark"></use>
+                      </svg>
+                      <div class="plan__text">Lorem ipsum dolor sit am</div>
+                    </li>
+                    <li class="plan__item">
+                      <svg
+                        class="plan__icon status-icon status-icon_size_m color color_raspberry-red"
+                      >
+                        <use href="img/status.svg#icon-cancel"></use>
+                      </svg>
+                      <div class="plan__text">Lorem ipsum dolor sit am</div>
+                    </li>
+                  </ul>
+                </article>
+
+                <article class="pricing__plan plan">
+                  <h3 class="plan__name">GOLD PLAN</h3>
+                  <div class="plan__price price">
+                    <div class="price__currency">$</div>
+                    <div class="price__amount">99</div>
+                    <div class="price__per-period">/mon</div>
+                  </div>
+                  <ul class="plan__list">
+                    <li class="plan__item">
+                      <svg
+                        class="plan__icon status-icon status-icon_size_m color color_blue"
+                      >
+                        <use href="img/status.svg#icon-checkmark"></use>
+                      </svg>
+                      <div class="plan__text">Lorem ipsum dolor sit am</div>
+                    </li>
+                    <li class="plan__item">
+                      <svg
+                        class="plan__icon status-icon status-icon_size_m color color_blue"
+                      >
+                        <use href="img/status.svg#icon-checkmark"></use>
+                      </svg>
+                      <div class="plan__text">Lorem ipsum dolor sit am</div>
+                    </li>
+                    <li class="plan__item">
+                      <svg
+                        class="plan__icon status-icon status-icon_size_m color color_blue"
+                      >
+                        <use href="img/status.svg#icon-checkmark"></use>
+                      </svg>
+                      <div class="plan__text">Lorem ipsum dolor sit am</div>
+                    </li>
+                    <li class="plan__item">
+                      <svg
+                        class="plan__icon status-icon status-icon_size_m color color_blue"
+                      >
+                        <use href="img/status.svg#icon-checkmark"></use>
+                      </svg>
+                      <div class="plan__text">Lorem ipsum dolor sit am</div>
+                    </li>
+                  </ul>
+                </article>
+              </div>
+
+              <div class="pricing__text section-introduction">
+                <div class="section-introduction__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris.
+                </div>
+              </div>
+
+              <div class="pricing__join">
+                <div class="pricing__line-block line-block">
+                  <div class="line-block__line"></div>
+                </div>
+                <button class="pricing__button button">Join now!</button>
+                <div class="pricing__line-block line-block">
+                  <div class="line-block__line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
       </main>
     </div>
   </body>

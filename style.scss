@@ -99,6 +99,15 @@ body {
   }
 }
 
+.button {
+  width: 204px;
+  height: 48px;
+  font-weight: 700;
+  border-radius: 24px;
+  background-color: #5584ff;
+  color: #ffffff;
+}
+
 .menu {
   &__item {
     &:not(:last-child) {
@@ -144,12 +153,6 @@ body {
 
   &__button {
     margin: 80px 0px 0px 0px;
-    width: 204px;
-    height: 48px;
-    font-weight: 700;
-    border-radius: 24px;
-    background-color: #5584ff;
-    color: #ffffff;
   }
 }
 
@@ -199,26 +202,25 @@ body {
 
   &__row {
     display: flex;
-    gap: 125px;
-  }
-
-  &__column_line {
-    width: 0;
-    margin: 0 calc(125px / -2);
   }
 
   &__line-block {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 168px;
+  }
+
+  &__column_line {
+    flex: 0 0 125px;
+    min-width: 0;
   }
 }
 
 .line-block {
   &__line {
-    transform: translateX(-50%);
-    background-color: rgb(132, 146, 175);
+    background-color: #8492af;
     opacity: 0.302;
-    position: absolute;
-    margin-top: 168px;
+    flex: none;
     width: 220px;
     height: 1px;
   }
@@ -275,15 +277,9 @@ body {
 }
 
 $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
-$gradientTransitionWhiteToGrayBlue: linear-gradient(
-  90deg,
-  rgb(255, 255, 255) 0%,
-  rgb(246, 247, 250) 100%
-);
 
 .gradient-transition {
   &__background {
-    position: relative;
     height: 166px;
     background-image: var(--bgColor);
     background-repeat: no-repeat;
@@ -294,11 +290,11 @@ $gradientTransitionWhiteToGrayBlue: linear-gradient(
     --bgColor: #{$gradientTransitionGrayToWhite};
   }
 
-  &_white-to-gray-blue {
-    --bgColor: #{$gradientTransitionWhiteToGrayBlue};
+  &_rotated {
+    transform: rotate(180deg);
   }
 
-  &-elevated {
+  &_elevated {
     margin-top: -83px;
   }
 }
@@ -541,8 +537,8 @@ $gradientTransitionWhiteToGrayBlue: linear-gradient(
     width: 86px;
     height: 86px;
     border-radius: 50%;
-    background-color: rgba(132, 146, 175, 0.3);
-    box-shadow: 0 0 0 10px rgba(132, 146, 175, 0.2);
+    background-color: #8492af4d;
+    box-shadow: 0 0 0 10px #8492af33;
   }
 
   &__hand {
@@ -620,17 +616,17 @@ $gradientTransitionWhiteToGrayBlue: linear-gradient(
   height: var(--h);
 
   &_size {
-    &-s {
+    &_s {
       --w: 15px;
       --h: 15px;
     }
 
-    &-m {
+    &_m {
       --w: 24px;
       --h: 24px;
     }
 
-    &-l {
+    &_l {
       --w: 28px;
       --h: 28px;
     }
@@ -642,7 +638,6 @@ $gradientTransitionWhiteToGrayBlue: linear-gradient(
 .layout {
   position: relative;
   background-color: #f6f7fa;
-  z-index: 1;
 
   &__body {
     position: relative;
@@ -653,6 +648,10 @@ $gradientTransitionWhiteToGrayBlue: linear-gradient(
   &__introduction {
     text-align: center;
     padding: 106px 359px 0px 359px;
+  }
+
+  &__text {
+    margin-top: 48px;
   }
 
   &__about {
@@ -691,7 +690,7 @@ $gradientTransitionWhiteToGrayBlue: linear-gradient(
   }
 }
 
-.page-introduction {
+.section-introduction {
   &__title {
     font-size: 60px;
     color: #0e1a35;
@@ -699,7 +698,6 @@ $gradientTransitionWhiteToGrayBlue: linear-gradient(
   }
 
   &__text {
-    margin-top: 59px;
     color: #8492af;
     line-height: calc(30 / 18 * 100%);
   }
@@ -746,4 +744,100 @@ $gradientTransitionWhiteToGrayBlue: linear-gradient(
   }
 }
 
-//plans
+//plans section
+
+.pricing {
+  &__body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-top: 17px;
+  }
+
+  &__plans {
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    gap: 139px;
+  }
+
+  &__plan {
+    width: 360px;
+    height: 422px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 50px rgb(132, 146, 175, 0.2);
+  }
+
+  &__text {
+    text-align: center;
+    margin-top: 109px;
+    width: 910px;
+  }
+
+  &__join {
+    display: flex;
+    align-items: center;
+    margin: 46px 0 104px 0;
+    gap: 30px;
+  }
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__name {
+    margin-top: 49px;
+    font-size: 24px;
+  }
+
+  &__price {
+    margin-top: 57px;
+    > * {
+      margin-top: auto;
+    }
+  }
+
+  &__list {
+    margin: 55px 0 47px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  &__text {
+    color: #8492af;
+  }
+}
+
+.price {
+  display: flex;
+  color: #0e1a35;
+  font-weight: 700;
+
+  &__currency {
+    font-size: 40px;
+  }
+
+  &__amount {
+    font-size: 72px;
+    margin-bottom: -10px;
+  }
+
+  &__per-period {
+    color: #8492af;
+    font-weight: 400;
+  }
+}

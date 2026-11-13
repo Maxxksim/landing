@@ -96,6 +96,15 @@ body {
   color: #5584ff;
 }
 
+.button {
+  width: 204px;
+  height: 48px;
+  font-weight: 700;
+  border-radius: 24px;
+  background-color: #5584ff;
+  color: #ffffff;
+}
+
 .menu__item:not(:last-child) {
   margin-right: 55px;
 }
@@ -132,12 +141,6 @@ body {
 }
 .hero__button {
   margin: 80px 0px 0px 0px;
-  width: 204px;
-  height: 48px;
-  font-weight: 700;
-  border-radius: 24px;
-  background-color: #5584ff;
-  color: #ffffff;
 }
 
 .grid-graph-background {
@@ -164,22 +167,21 @@ body {
 }
 .features__row {
   display: flex;
-  gap: 125px;
-}
-.features__column_line {
-  width: 0;
-  margin: 0 -62.5px;
 }
 .features__line-block {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 168px;
+}
+.features__column_line {
+  flex: 0 0 125px;
+  min-width: 0;
 }
 
 .line-block__line {
-  transform: translateX(-50%);
-  background-color: rgb(132, 146, 175);
+  background-color: #8492af;
   opacity: 0.302;
-  position: absolute;
-  margin-top: 168px;
+  flex: none;
   width: 220px;
   height: 1px;
 }
@@ -231,7 +233,6 @@ body {
 }
 
 .gradient-transition__background {
-  position: relative;
   height: 166px;
   background-image: var(--bgColor);
   background-repeat: no-repeat;
@@ -240,10 +241,10 @@ body {
 .gradient-transition_gray-to-white {
   --bgColor: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
 }
-.gradient-transition_white-to-gray-blue {
-  --bgColor: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(246, 247, 250) 100%);
+.gradient-transition_rotated {
+  transform: rotate(180deg);
 }
-.gradient-transition-elevated {
+.gradient-transition_elevated {
   margin-top: -83px;
 }
 
@@ -444,7 +445,7 @@ body {
   width: 86px;
   height: 86px;
   border-radius: 50%;
-  background-color: rgba(132, 146, 175, 0.3);
+  background-color: rgba(132, 146, 175, 0.3019607843);
   box-shadow: 0 0 0 10px rgba(132, 146, 175, 0.2);
 }
 .task-card__hand {
@@ -512,15 +513,15 @@ body {
   width: var(--w);
   height: var(--h);
 }
-.status-icon_size-s {
+.status-icon_size_s {
   --w: 15px;
   --h: 15px;
 }
-.status-icon_size-m {
+.status-icon_size_m {
   --w: 24px;
   --h: 24px;
 }
-.status-icon_size-l {
+.status-icon_size_l {
   --w: 28px;
   --h: 28px;
 }
@@ -528,7 +529,6 @@ body {
 .layout {
   position: relative;
   background-color: #f6f7fa;
-  z-index: 1;
 }
 .layout__body {
   position: relative;
@@ -538,6 +538,9 @@ body {
 .layout__introduction {
   text-align: center;
   padding: 106px 359px 0px 359px;
+}
+.layout__text {
+  margin-top: 48px;
 }
 .layout__about {
   position: relative;
@@ -572,13 +575,12 @@ body {
      object-position: center;
 }
 
-.page-introduction__title {
+.section-introduction__title {
   font-size: 60px;
   color: #0e1a35;
   font-weight: 100;
 }
-.page-introduction__text {
-  margin-top: 59px;
+.section-introduction__text {
   color: #8492af;
   line-height: 166.6666666667%;
 }
@@ -614,4 +616,85 @@ body {
   border-radius: 50%;
   background-color: #5584ff;
   box-shadow: 0 0 0 10px rgba(85, 132, 255, 0.5);
+}
+
+.pricing__body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.pricing__title {
+  margin-top: 17px;
+}
+.pricing__plans {
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+  gap: 139px;
+}
+.pricing__plan {
+  width: 360px;
+  height: 422px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 50px rgba(132, 146, 175, 0.2);
+}
+.pricing__text {
+  text-align: center;
+  margin-top: 109px;
+  width: 910px;
+}
+.pricing__join {
+  display: flex;
+  align-items: center;
+  margin: 46px 0 104px 0;
+  gap: 30px;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.plan__name {
+  margin-top: 49px;
+  font-size: 24px;
+}
+.plan__price {
+  margin-top: 57px;
+}
+.plan__price > * {
+  margin-top: auto;
+}
+.plan__list {
+  margin: 55px 0 47px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+.plan__item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.plan__text {
+  color: #8492af;
+}
+
+.price {
+  display: flex;
+  color: #0e1a35;
+  font-weight: 700;
+}
+.price__currency {
+  font-size: 40px;
+}
+.price__amount {
+  font-size: 72px;
+  margin-bottom: -10px;
+}
+.price__per-period {
+  color: #8492af;
+  font-weight: 400;
 }
