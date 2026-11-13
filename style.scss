@@ -52,7 +52,9 @@ body {
 
 [class*="__container"] {
   max-width: 1710px;
+  padding: 0 15px;
   margin-inline: auto;
+  box-sizing: content-box;
 }
 
 ._ibg {
@@ -79,9 +81,6 @@ body {
     display: flex;
     min-height: 200px;
     align-items: center;
-  }
-
-  &__logo {
   }
 
   &__menu {
@@ -121,15 +120,9 @@ body {
   flex: 1 1 auto;
 }
 
-.page {
-  &__hero {
-  }
-}
+
 .hero {
   position: relative;
-
-  &__container {
-  }
 
   &__body {
     text-align: center;

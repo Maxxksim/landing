@@ -51,7 +51,9 @@ body {
 
 [class*=__container] {
   max-width: 1710px;
+  padding: 0 15px;
   margin-inline: auto;
+  box-sizing: content-box;
 }
 
 ._ibg {
