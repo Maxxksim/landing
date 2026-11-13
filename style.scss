@@ -120,7 +120,6 @@ body {
   flex: 1 1 auto;
 }
 
-
 .hero {
   position: relative;
 
@@ -192,9 +191,6 @@ body {
 }
 
 .features {
-  &__container {
-  }
-
   &__body {
     display: flex;
     flex-direction: column;
@@ -206,15 +202,9 @@ body {
     gap: 125px;
   }
 
-  &__column {
-  }
-
   &__column_line {
     width: 0;
     margin: 0 calc(125px / -2);
-  }
-
-  &__item {
   }
 
   &__line-block {
@@ -236,9 +226,6 @@ body {
 
 .item-feature {
   text-align: center;
-
-  &__dashboard {
-  }
 
   &__card {
     margin-top: 125px;
@@ -374,15 +361,8 @@ $gradientTransitionWhiteToGrayBlue: linear-gradient(
 }
 
 .item {
-  &__check-icon {
-    width: 28px;
-    height: 28px;
-    color: rgb(88, 134, 255);
-  }
-
   &__text {
     line-height: calc(30 / 18 * 100%);
-    color: rgb(88, 134, 255);
   }
 }
 
@@ -531,7 +511,7 @@ $gradientTransitionWhiteToGrayBlue: linear-gradient(
   height: 101px;
   background-color: #ffffff;
 
-  &__icon {
+  &__profile-icon {
     margin: 0 21px 0 30px;
   }
 
@@ -540,6 +520,9 @@ $gradientTransitionWhiteToGrayBlue: linear-gradient(
   }
 
   &__status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
     font-size: 10px;
   }
 
@@ -597,106 +580,60 @@ $gradientTransitionWhiteToGrayBlue: linear-gradient(
   }
 }
 
-$delayedDaysTaskStatusColor: #e85c8a;
-$completedTaskStatusColor: #008000;
-$leftDaysTaskStatusColor: #8492af;
-
-.task-status {
-  display: flex;
-  align-items: center;
+.color {
   color: var(--statusColor);
 
-  &__icon {
-    margin-right: 6px;
+  &_raspberry-red {
+    --statusColor: #e85c8a;
   }
 
-  &_delayed {
-    --statusColor: #{$delayedDaysTaskStatusColor};
+  &_green {
+    --statusColor: #008000;
   }
 
-  &_completed {
-    --statusColor: #{$completedTaskStatusColor};
+  &_blue {
+    --statusColor: #5886ff;
   }
 
-  &_left {
-    --statusColor: #{$leftDaysTaskStatusColor};
+  &_gray {
+    --statusColor: #8492af;
   }
 }
 
-.icon {
-  &_clock,
-  &_completed,
-  &_profile {
-    border-radius: 50%;
-  }
+.profile-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #5584ff;
+  border-radius: 50%;
 
-  &_clock,
-  &_completed {
-    position: relative;
-    width: 14px;
-    height: 14px;
-    border: 1px solid currentColor;
-  }
-
-  &_profile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background-color: #5584ff;
-  }
-
-  &_profile &__name-letter {
+  &__name-letter {
     font-weight: 700;
     color: #ffffff;
   }
+}
 
-  &_clock &__minute-hand,
-  &_clock &__hour-hand {
-    position: absolute;
-    left: 45%;
-    bottom: 45%;
-    width: 1px;
-    height: 5px;
-    background-color: currentColor;
-    transform-origin: bottom center;
-  }
+.status-icon {
+  width: var(--w);
+  height: var(--h);
 
-  &_clock &__hour-hand {
-    left: calc(50% - 1px);
-    transform: rotate(90deg);
-  }
+  &_size {
+    &-s {
+      --w: 15px;
+      --h: 15px;
+    }
 
-  &_clock &__minute-hand {
-    bottom: calc(50% - 1px);
-    transform: rotate(0deg);
-  }
+    &-m {
+      --w: 24px;
+      --h: 24px;
+    }
 
-  &_completed &__first-stick {
-    width: 1px;
-    height: 6px;
-
-    bottom: 32%;
-    left: 40%;
-
-    transform: rotate(45deg);
-  }
-
-  &_completed &__second-stick {
-    width: 1px;
-    height: 3px;
-    left: 44%;
-    bottom: 34%;
-    transform: rotate(-50deg);
-  }
-
-  &_completed &__first-stick,
-  &_completed &__second-stick {
-    position: absolute;
-
-    background-color: currentColor;
-    transform-origin: bottom center;
+    &-l {
+      --w: 28px;
+      --h: 28px;
+    }
   }
 }
 
@@ -808,3 +745,5 @@ $leftDaysTaskStatusColor: #8492af;
     box-shadow: 0 0 0 10px rgba(85, 132, 255, 0.5);
   }
 }
+
+//plans

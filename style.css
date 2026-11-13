@@ -295,14 +295,8 @@ body {
   gap: 19px;
 }
 
-.item__check-icon {
-  width: 28px;
-  height: 28px;
-  color: rgb(88, 134, 255);
-}
 .item__text {
   line-height: 166.6666666667%;
-  color: rgb(88, 134, 255);
 }
 
 .drag-drop__body {
@@ -424,13 +418,16 @@ body {
   height: 101px;
   background-color: #ffffff;
 }
-.task-card__icon {
+.task-card__profile-icon {
   margin: 0 21px 0 30px;
 }
 .task-card__title {
   margin-bottom: 10px;
 }
 .task-card__status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   font-size: 10px;
 }
 .task-card__kebab-menu {
@@ -481,80 +478,51 @@ body {
   font-weight: 500;
 }
 
-.task-status {
-  display: flex;
-  align-items: center;
+.color {
   color: var(--statusColor);
 }
-.task-status__icon {
-  margin-right: 6px;
-}
-.task-status_delayed {
+.color_raspberry-red {
   --statusColor: #e85c8a;
 }
-.task-status_completed {
+.color_green {
   --statusColor: #008000;
 }
-.task-status_left {
+.color_blue {
+  --statusColor: #5886ff;
+}
+.color_gray {
   --statusColor: #8492af;
 }
 
-.icon_clock, .icon_completed, .icon_profile {
-  border-radius: 50%;
-}
-.icon_clock, .icon_completed {
-  position: relative;
-  width: 14px;
-  height: 14px;
-  border: 1px solid currentColor;
-}
-.icon_profile {
+.profile-icon {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 40px;
   background-color: #5584ff;
+  border-radius: 50%;
 }
-.icon_profile .icon__name-letter {
+.profile-icon__name-letter {
   font-weight: 700;
   color: #ffffff;
 }
-.icon_clock .icon__minute-hand, .icon_clock .icon__hour-hand {
-  position: absolute;
-  left: 45%;
-  bottom: 45%;
-  width: 1px;
-  height: 5px;
-  background-color: currentColor;
-  transform-origin: bottom center;
+
+.status-icon {
+  width: var(--w);
+  height: var(--h);
 }
-.icon_clock .icon__hour-hand {
-  left: calc(50% - 1px);
-  transform: rotate(90deg);
+.status-icon_size-s {
+  --w: 15px;
+  --h: 15px;
 }
-.icon_clock .icon__minute-hand {
-  bottom: calc(50% - 1px);
-  transform: rotate(0deg);
+.status-icon_size-m {
+  --w: 24px;
+  --h: 24px;
 }
-.icon_completed .icon__first-stick {
-  width: 1px;
-  height: 6px;
-  bottom: 32%;
-  left: 40%;
-  transform: rotate(45deg);
-}
-.icon_completed .icon__second-stick {
-  width: 1px;
-  height: 3px;
-  left: 44%;
-  bottom: 34%;
-  transform: rotate(-50deg);
-}
-.icon_completed .icon__first-stick, .icon_completed .icon__second-stick {
-  position: absolute;
-  background-color: currentColor;
-  transform-origin: bottom center;
+.status-icon_size-l {
+  --w: 28px;
+  --h: 28px;
 }
 
 .layout {
