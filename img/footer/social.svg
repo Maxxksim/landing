@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="icon-google" viewBox="0 0 18 18">
+    <image width="18" height="18" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABm0lEQVQ4jY3UTYhPYRQG8N/8Z2yUmVGKGjXCiNhipKwsZKFmQSkLpRQ27LGynGah2EimRlPkKwv5WIyvKWxRQjYUsuBvQWHQq3PruGbuOHXrfNz3ued5zj1vx7Hjl4V1Yhe2YyW6Iv8Dj7EP78xgrUj34j5G8BDXsRD9OIuhJhDpq8MYjG4uRG4S4ziME/jQBNQKSjsjnki183gf9VVNIBXQPMyNuDvVpvAs6ZTtFz7VgT7jW8Q7ageW4Sde/E9H5cUrER/FpvD3YDFGZ9NHEvsglmAd7sSEFuFmjF3QydaTcu0K6G1MbT3W4FTkRxLtdg0k59qtVCzoD3AmUTmdJtabngqkyvV3JaDSzRYM4Gvk+nAXG/G8SaPS0QLcim624jb24hDeRH20dq5do/pH7JPYjDHsjikWu4GLeIINWI6XieY/HW0L/0gCqex1UMsCz0htTvjzp6mX9VgRf/mr2YDuhV+2fG2qLcW5ALqEj01ARaMDIfZqPMKX6KDsYLFyvexvAqmAnsZFVoQu61Gm9D2oXMW1af7qvw2/AUTqWQZ9bLa3AAAAAElFTkSuQmCC"/>
+  </symbol>
+
+  <symbol id="icon-twitter" viewBox="0 0 18 16">
+    <image width="18" height="16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAQCAYAAAAbBi9cAAABXElEQVQ4jZ3TP0iVYRTH8Y/S/yYloaihJcopGsLUoQTX4EJTFDQEbZe2EO6WRg0OpWs1tnpxs1UKl1uzoEYQUUP/hijNfxw5wsuL9+Xab3qf55zne97n+Z3TNTE1Yx86gT4s4V8ca9RrO6cPJOMS3lfwAvAS13P9HQ/QejTdvI3JblzAPK62gXShWYCEevE8i6/iVIBO4zhe4z66S6ArGG5TZAt38SsOLebGITzFO9zE0Uw+X3HltSjSqNdW4o0+4RVuZfBirv/mr29VgH426rVl+dijOJMuHCwkHcFgBST0dfcjrtbCQAnSqVpF0A+M/QckNFcEhabxEL/3AfmG2TJoE0PZBp3qMf6UQaE7aX0nWsCzYl4R9BmXcS+7tZ3C7htYL8bD/pM4hn7EBMbsHG4DeZuQL+VAgM5hvGLWQh/wBC+wsVdCgGJgr+EsRnKIe9LBj3iT/RKG7C1sAyozRWxoP0gRAAAAAElFTkSuQmCC"/>
+  </symbol>
+
+  <symbol id="icon-facebook" viewBox="0 0 9 17">
+    <image width="9" height="17" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAARCAYAAAAPFIbmAAAAo0lEQVQokc2RLQ4CMRBGXxtgDQoHFyE4BAKJ4xSEA0Cy4aeesAfZPQGaILkCCgkKVEk33WYgBCr3M/N15iXTmVHWWiqZrGgDG2AKdH36GiCTFQo4AEPeddPiOfoClGoIP/iopcAZuEuoI4nFbLKuvCZCarvPn0DrB3rSfwCnJKqd+/gSaAJjoC9qKx8vcpk7YC6mc8uNn66OkLzdEeh5/whZ4AWQwSEr/AY4DwAAAABJRU5ErkJggg=="/>
+  </symbol>
+</svg>

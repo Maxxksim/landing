@@ -698,3 +698,28 @@ body {
   color: #8492af;
   font-weight: 400;
 }
+
+.footer {
+  background-color: #0e1a35;
+}
+.footer__container {
+  color: #8492af;
+  display: flex;
+  min-height: 153px;
+  align-items: center;
+}
+.footer__copyright {
+  margin-right: 799px;
+}
+.footer__menu {
+  margin-right: 48px;
+}
+
+.social__list {
+  display: flex;
+  gap: 16px;
+}
+.social__icon {
+  width: 19px;
+  height: 19px;
+}

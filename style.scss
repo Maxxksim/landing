@@ -841,3 +841,34 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     font-weight: 400;
   }
 }
+
+.footer {
+  background-color: #0e1a35;
+
+  &__container {
+    color: #8492af;
+    display: flex;
+    min-height: 153px;
+    align-items: center;
+  }
+
+  &__copyright {
+    margin-right: 799px;
+  }
+
+  &__menu {
+    margin-right: 48px;
+  }
+}
+
+.social {
+  &__list {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__icon {
+    width: 19px;
+    height: 19px;
+  }
+}
