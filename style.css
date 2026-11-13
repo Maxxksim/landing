@@ -193,6 +193,9 @@ body {
   margin-top: 125px;
   margin-bottom: 37px;
 }
+.item-feature__dashboard {
+  box-shadow: 0 -10px 100px -10px rgba(85, 132, 255, 0.25);
+}
 
 .card {
   max-width: 374px;
