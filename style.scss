@@ -57,6 +57,8 @@ body {
   box-sizing: content-box;
 }
 
+//header
+
 .header {
   position: absolute;
   width: 100%;
@@ -115,6 +117,8 @@ body {
 .main {
   flex: 1 1 auto;
 }
+
+//hero section
 
 .hero {
   &__body {
@@ -191,13 +195,7 @@ body {
   }
 }
 
-.page {
-  &__features {
-    position: relative;
-    z-index: 2;
-    //margin: -493px 0 0 0;
-  }
-}
+//features section
 
 .features {
   &__container {
@@ -300,12 +298,10 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   }
 }
 
-.page {
-  &__needs {
-    background-color: #f6f7fa;
-  }
-}
-.needs {
+//all you need is browser section
+
+.browser {
+  background-color: #f6f7fa;
   position: relative;
   min-height: 683px;
 
@@ -318,9 +314,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     right: 0;
     top: 18px;
   }
-}
 
-.needs-card {
   &__title {
     font-size: 60px;
     color: #0e1a35;
@@ -331,37 +325,29 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   }
 
   &__text {
+    display: flex;
     color: #8492af;
     margin-bottom: 35px;
     line-height: calc(30 / 18 * 100%);
     max-width: 580px;
+    flex-direction: column;
+    gap: 43px;
   }
 
   &__list {
     display: flex;
+    line-height: calc(30 / 18 * 100%);
     flex-direction: column;
     gap: 33px;
   }
-}
 
-.needs-card-text {
-  display: flex;
-  flex-direction: column;
-  gap: 43px;
-}
-
-.list {
   &__item {
     display: flex;
     gap: 19px;
   }
 }
 
-.item {
-  &__text {
-    line-height: calc(30 / 18 * 100%);
-  }
-}
+//drag drop section
 
 .drag-drop {
   &__body {
@@ -672,7 +658,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     }
   }
 
-  &__image {
+  &__picture {
     position: absolute;
     top: 0;
     left: 0;
@@ -703,7 +689,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   }
 }
 
-.layout-card {
+.item-layout {
   &__line-dot {
     margin-top: 15px;
   }
@@ -841,6 +827,8 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     font-weight: 400;
   }
 }
+
+//footer
 
 .footer {
   background-color: #0e1a35;

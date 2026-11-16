@@ -157,11 +157,6 @@ body {
   background-position: center center;
 }
 
-.page__features {
-  position: relative;
-  z-index: 2;
-}
-
 .features__container {
   display: flex;
   flex-direction: column;
@@ -245,24 +240,20 @@ body {
   margin-top: -83px;
 }
 
-.page__needs {
+.browser {
   background-color: #f6f7fa;
-}
-
-.needs {
   position: relative;
   min-height: 683px;
 }
-.needs__body {
+.browser__body {
   padding: 98px 0px 279px 122px;
 }
-.needs__picture {
+.browser__picture {
   position: absolute;
   right: 0;
   top: 18px;
 }
-
-.needs-card__title {
+.browser__title {
   font-size: 60px;
   color: #0e1a35;
   font-weight: 100;
@@ -270,31 +261,24 @@ body {
   margin-bottom: 59px;
   line-height: 24%;
 }
-.needs-card__text {
+.browser__text {
+  display: flex;
   color: #8492af;
   margin-bottom: 35px;
   line-height: 166.6666666667%;
   max-width: 580px;
-}
-.needs-card__list {
-  display: flex;
-  flex-direction: column;
-  gap: 33px;
-}
-
-.needs-card-text {
-  display: flex;
   flex-direction: column;
   gap: 43px;
 }
-
-.list__item {
+.browser__list {
+  display: flex;
+  line-height: 166.6666666667%;
+  flex-direction: column;
+  gap: 33px;
+}
+.browser__item {
   display: flex;
   gap: 19px;
-}
-
-.item__text {
-  line-height: 166.6666666667%;
 }
 
 .drag-drop__body {
@@ -553,7 +537,7 @@ body {
   padding: 457px 154px 158px 0;
   margin-left: auto;
 }
-.layout__image {
+.layout__picture {
   position: absolute;
   top: 0;
   left: 0;
@@ -562,7 +546,7 @@ body {
   padding-top: 72px;
   z-index: 0;
 }
-.layout__image img {
+.layout__picture img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
@@ -581,15 +565,15 @@ body {
   line-height: 166.6666666667%;
 }
 
-.layout-card__line-dot {
+.item-layout__line-dot {
   margin-top: 15px;
 }
-.layout-card_reversed > :nth-child(1),
-.layout-card_reversed > :nth-child(3) {
+.item-layout_reversed > :nth-child(1),
+.item-layout_reversed > :nth-child(3) {
   margin-left: auto;
   text-align: right;
 }
-.layout-card_reversed > :nth-child(2) {
+.item-layout_reversed > :nth-child(2) {
   transform: rotate(180deg);
 }
 
