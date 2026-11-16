@@ -44,6 +44,7 @@ body {
   font-size: clamp(0.75rem, 0.8rem + 0.3vw, 1.125rem);
   font-weight: 400;
   font-family: "Roboto";
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -204,7 +205,7 @@ body {
   color: #ffffff;
 }
 .hero__text {
-  font-size: clamp(14px, 10.1176px + 1.2941vw, 36px);
+  font-size: clamp(24px, 21.8824px + 0.7059vw, 36px);
   color: #8492af;
   margin: 20px 0px 0px 0px;
 }
@@ -239,15 +240,29 @@ body {
   background-position: center center;
 }
 
-.features__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .features__body {
   display: flex;
   margin-top: 263px;
   margin-bottom: 37px;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1150px) {
+  .features__body {
+    flex-wrap: wrap;
+  }
+  .features__body > :nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 850px) {
+  .features__body {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .features__body > :nth-child(2) {
+    display: none;
+  }
 }
 .features__line-block {
   display: flex;
@@ -257,6 +272,12 @@ body {
 .features__column_line {
   flex: 0 0 125px;
   min-width: 0;
+  align-self: stretch;
+}
+@media (max-width: 1150px) {
+  .features__column_line {
+    flex: 0 0 63px;
+  }
 }
 
 .line-block__line {
