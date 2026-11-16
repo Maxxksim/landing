@@ -207,14 +207,15 @@ body {
   }
 
   &__body {
-    margin-top: 263px;
     display: flex;
+    margin-top: 263px;
+    margin-bottom: 37px;
   }
 
   &__line-block {
     display: flex;
     justify-content: center;
-    margin-top: 168px;
+    margin-top: 37px;
   }
 
   &__column_line {
@@ -235,12 +236,6 @@ body {
 
 .item-feature {
   text-align: center;
-
-  &__card {
-    margin-bottom: 37px;
-  }
-}
-.card {
   max-width: 374px;
   display: flex;
   flex-direction: column;
@@ -262,7 +257,7 @@ body {
   }
 }
 
-.card-introduction {
+.item-introduction {
   position: relative;
   z-index: 100;
   &__title {
