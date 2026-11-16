@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="body" id="body">
     <div class="wrapper">
       <header class="header">
         <div class="header__container">
@@ -19,7 +19,19 @@
             alt="Merkury logo"
             class="header__logo"
           />
-          <nav class="header__menu menu">
+          <div class="header__burger-menu burger-menu" id="burger-menu-btn">
+            <div class="burger-menu__line"></div>
+            <div class="burger-menu__line"></div>
+            <div class="burger-menu__line"></div>
+          </div>
+          <nav class="header__menu menu" id="menu">
+            <div
+              class="menu__closing-menu-button closing-menu-button"
+              id="menu-close-btn"
+            >
+              <div class="closing-menu-button__first-line"></div>
+              <div class="closing-menu-button__second-line"></div>
+            </div>
             <ul class="menu__list">
               <li class="menu__item">
                 <a href="" class="menu__link">Features</a>
@@ -33,9 +45,11 @@
               <li class="menu__item">
                 <a href="" class="menu__link">Contact</a>
               </li>
+              <li class="menu__item">
+                <button class="menu__button">Login</button>
+              </li>
             </ul>
           </nav>
-          <button class="header__button">Login</button>
         </div>
       </header>
       <main class="page">
@@ -625,5 +639,6 @@
         </footer>
       </main>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
