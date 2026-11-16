@@ -358,33 +358,34 @@ body {
   color: #8492af;
   line-height: 166.6666666667%;
 }
-.about__buttons {
+.about__buttons-arrows {
   margin-top: 47px;
   margin-bottom: 11px;
   display: flex;
   gap: 15px;
 }
-
-.buttons__item {
+.about__button {
+  background: transparent;
+  position: relative;
   width: 35px;
   height: 35px;
   border: 1px solid #8492af;
   border-radius: 50%;
-  position: relative;
 }
-.buttons__previous, .buttons__next {
+.about__button::before {
+  content: "";
+  position: absolute;
   background-color: #8492af;
   width: 10px;
   height: 10px;
-  position: absolute;
   top: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
 }
-.buttons__previous {
+.about__button_prev::before {
   left: calc(50% + 2px);
   clip-path: polygon(0 0, 100% 100%, 0 100%);
 }
-.buttons__next {
+.about__button_next::before {
   left: calc(50% - 2px);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0%);
 }
