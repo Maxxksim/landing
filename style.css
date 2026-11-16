@@ -56,20 +56,6 @@ body {
   box-sizing: content-box;
 }
 
-._ibg {
-  position: relative;
-}
-._ibg img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .header {
   position: absolute;
   width: 100%;
@@ -120,10 +106,8 @@ body {
   flex: 1 1 auto;
 }
 
-.hero {
-  position: relative;
-}
 .hero__body {
+  position: relative;
   text-align: center;
   padding: 279px 289px 581px 289px;
   position: relative;
@@ -142,30 +126,49 @@ body {
 .hero__button {
   margin: 80px 0px 0px 0px;
 }
+.hero__picture {
+  position: absolute;
+  top: 607px;
+  left: 25%;
+  max-width: 882px;
+  max-height: auto;
+  z-index: 0;
+  box-shadow: 0 -10px 100px -10px rgba(85, 132, 255, 0.25);
+}
+.hero__picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
 
 .grid-graph-background {
-  background-image: url("img/main/background/Graph.svg"), linear-gradient(90deg, #0e1a35 0%, #0e1a35 10%, rgba(14, 26, 53, 0) 40%, rgba(14, 26, 53, 0) 60%, #0e1a35 90%, #0e1a35 100%), url("img/main/background/Grid.svg");
+  background-image: url("img/background/Graph.svg"), linear-gradient(90deg, #0e1a35 0%, #0e1a35 10%, rgba(14, 26, 53, 0) 40%, rgba(14, 26, 53, 0) 60%, #0e1a35 90%, #0e1a35 100%), url("img/background/Grid.svg");
   background-repeat: no-repeat, no-repeat;
   background-size: auto, 100% 100%, auto;
-  background-position: center center;
   background-color: #0e1a35;
 }
-.grid-graph-background_position-1 {
+.grid-graph-background_position_1 {
   background-position: center 200px, center top, center 82px;
+}
+.grid-graph-background_position_2 {
+  background-position: center center;
 }
 
 .page__features {
   position: relative;
   z-index: 2;
-  margin: -493px 0 0 0;
 }
 
-.features__body {
+.features__container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.features__row {
+.features__body {
+  margin-top: 263px;
   display: flex;
 }
 .features__line-block {
@@ -190,11 +193,7 @@ body {
   text-align: center;
 }
 .item-feature__card {
-  margin-top: 125px;
   margin-bottom: 37px;
-}
-.item-feature__dashboard {
-  box-shadow: 0 -10px 100px -10px rgba(85, 132, 255, 0.25);
 }
 
 .card {
@@ -231,7 +230,7 @@ body {
   color: #8492af;
   line-height: 166.6666666667%;
 }
-.card-introduction__text_width-245 {
+.card-introduction__text_width_245 {
   width: 245px;
 }
 
@@ -353,7 +352,6 @@ body {
   line-height: 38.7096774194%;
 }
 .task-title__counter {
-  margin-right: 202px;
   color: #8492af;
 }
 .task-title__arrow {

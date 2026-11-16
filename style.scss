@@ -57,19 +57,6 @@ body {
   box-sizing: content-box;
 }
 
-._ibg {
-  position: relative;
-  & img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    object-fit: contain;
-  }
-}
-
 .header {
   position: absolute;
   width: 100%;
@@ -130,9 +117,8 @@ body {
 }
 
 .hero {
-  position: relative;
-
   &__body {
+    position: relative;
     text-align: center;
     padding: 279px 289px 581px 289px;
     position: relative;
@@ -154,11 +140,28 @@ body {
   &__button {
     margin: 80px 0px 0px 0px;
   }
+
+  &__picture {
+    position: absolute;
+    top: 607px;
+    left: 25%;
+    max-width: 882px;
+    max-height: auto;
+    z-index: 0;
+    box-shadow: 0 -10px 100px -10px rgba(85, 132, 255, 0.25);
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
 }
 
 .grid-graph-background {
   background-image:
-    url("img/main/background/Graph.svg"),
+    url("img/background/Graph.svg"),
     linear-gradient(
       90deg,
       #0e1a35 0%,
@@ -168,20 +171,23 @@ body {
       #0e1a35 90%,
       #0e1a35 100%
     ),
-    url("img/main/background/Grid.svg");
+    url("img/background/Grid.svg");
   background-repeat: no-repeat, no-repeat;
   background-size:
     auto,
     100% 100%,
     auto;
-  background-position: center center;
   background-color: #0e1a35;
 
-  &_position-1 {
+  &_position_1 {
     background-position:
       center 200px,
       center top,
       center 82px;
+  }
+
+  &_position_2 {
+    background-position: center center;
   }
 }
 
@@ -189,18 +195,19 @@ body {
   &__features {
     position: relative;
     z-index: 2;
-    margin: -493px 0 0 0;
+    //margin: -493px 0 0 0;
   }
 }
 
 .features {
-  &__body {
+  &__container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  &__row {
+  &__body {
+    margin-top: 263px;
     display: flex;
   }
 
@@ -230,12 +237,7 @@ body {
   text-align: center;
 
   &__card {
-    margin-top: 125px;
     margin-bottom: 37px;
-  }
-
-  &__dashboard {
-    box-shadow: 0 -10px 100px -10px rgba(85, 132, 255, 0.25);
   }
 }
 .card {
@@ -274,7 +276,7 @@ body {
     color: #8492af;
     line-height: calc(30 / 18 * 100%);
 
-    &_width-245 {
+    &_width_245 {
       width: 245px;
     }
   }
@@ -430,7 +432,6 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   }
 
   &__counter {
-    margin-right: 202px;
     color: #8492af;
   }
 
