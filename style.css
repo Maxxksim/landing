@@ -840,27 +840,36 @@ body {
 .pricing__plans {
   margin-top: 90px;
   display: flex;
-  align-items: center;
-  gap: 139px;
+  flex: 0 1 360px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: clamp(30px, 6.809px + 7.73vw, 139px);
 }
 .pricing__plan {
-  width: 360px;
+  max-width: 360px;
   height: 422px;
   display: flex;
   align-items: center;
   flex-direction: column;
   box-shadow: 0 0 50px rgba(132, 146, 175, 0.2);
+  width: 100%;
 }
 .pricing__text {
   text-align: center;
   margin-top: 109px;
-  width: 910px;
+  max-width: 910px;
+  width: 100%;
 }
 .pricing__join {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin: 46px 0 104px 0;
-  gap: 30px;
+  gap: clamp(12px, 3vw, 30px);
+}
+.pricing__line-block {
+  max-width: 220px;
+  width: 100%;
 }
 
 .plan {
