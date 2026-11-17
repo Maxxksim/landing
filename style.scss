@@ -417,25 +417,40 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
 .browser {
   background-color: #f6f7fa;
   position: relative;
-  min-height: 683px;
 
   &__body {
-    padding: 98px 0px 279px 122px;
+    padding: 5.73% 0 16.374% 0;
   }
 
   &__picture {
     position: absolute;
+    top: 1.052%;
+    bottom: 4.853%;
     right: 0;
-    top: 18px;
+    z-index: 1;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      max-width: none;
+      object-fit: contain;
+      object-position: right center;
+    }
+  }
+
+  &__title,
+  &__text,
+  &__list {
+    position: relative;
+    z-index: 2;
   }
 
   &__title {
-    font-size: 60px;
+    font-size: clamp(24px, 10.5882px + 2.4706vw, 60px);
     color: #0e1a35;
     font-weight: 100;
-    white-space: nowrap;
+
     margin-bottom: 59px;
-    line-height: calc(14.4 / 60 * 100%);
   }
 
   &__text {
@@ -458,6 +473,34 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   &__item {
     display: flex;
     gap: 19px;
+  }
+
+  @media (width <= 1615px) {
+    &__body {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 50px;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__text {
+      max-width: fit-content;
+    }
+
+    &__list {
+      flex-direction: row;
+    }
+
+    &__picture {
+      position: relative;
+      z-index: 1;
+
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 }
 

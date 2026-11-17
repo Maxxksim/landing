@@ -347,23 +347,35 @@ body {
 .browser {
   background-color: #f6f7fa;
   position: relative;
-  min-height: 683px;
 }
 .browser__body {
-  padding: 98px 0px 279px 122px;
+  padding: 5.73% 0 16.374% 0;
 }
 .browser__picture {
   position: absolute;
+  top: 1.052%;
+  bottom: 4.853%;
   right: 0;
-  top: 18px;
+  z-index: 1;
+}
+.browser__picture img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: right center;
+     object-position: right center;
+}
+.browser__title, .browser__text, .browser__list {
+  position: relative;
+  z-index: 2;
 }
 .browser__title {
-  font-size: 60px;
+  font-size: clamp(24px, 10.5882px + 2.4706vw, 60px);
   color: #0e1a35;
   font-weight: 100;
-  white-space: nowrap;
   margin-bottom: 59px;
-  line-height: 24%;
 }
 .browser__text {
   display: flex;
@@ -383,6 +395,30 @@ body {
 .browser__item {
   display: flex;
   gap: 19px;
+}
+@media (width <= 1615px) {
+  .browser__body {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    align-items: center;
+    text-align: center;
+  }
+  .browser__text {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .browser__list {
+    flex-direction: row;
+  }
+  .browser__picture {
+    position: relative;
+    z-index: 1;
+  }
+  .browser__picture img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .drag-drop__body {
