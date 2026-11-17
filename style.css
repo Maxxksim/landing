@@ -920,19 +920,20 @@ body {
 }
 
 .footer {
+  height: 100%;
   background-color: #0e1a35;
 }
 .footer__container {
   color: #8492af;
   display: flex;
   min-height: 153px;
+  height: 100%;
   align-items: center;
-}
-.footer__copyright {
-  margin-right: 799px;
+  justify-content: center;
 }
 .footer__menu {
-  margin-right: 48px;
+  margin-right: 2.807%;
+  margin-left: auto;
 }
 
 .social__list {
@@ -942,4 +943,21 @@ body {
 .social__icon {
   width: 19px;
   height: 19px;
+}
+
+.menu-footer__list {
+  display: flex;
+  gap: clamp(10px, 0.614px + 2.888vw, 50px);
+  margin-left: auto;
+}
+
+@media (width <= 525px) {
+  .footer__container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer__menu {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
