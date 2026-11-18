@@ -5,6 +5,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^8.3.8"
+    "standard": "^17.1.2",
+    "vite": "^6.2.7"
+  },
+  "allowScripts": {
+    "esbuild@0.25.12": true
   }
 }
