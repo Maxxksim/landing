@@ -983,6 +983,10 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     font-size: 1.287cqw;
     line-height: 2.145cqw;
     width: 17.5cqw;
+
+    font-size: 1.052cqw;
+    line-height: 1, 666cqw;
+    width: 14.21cqw;
   }
 }
 
@@ -1029,6 +1033,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     flex-wrap: wrap;
     gap: clamp(30px, calc(6.809px + 7.73vw), 139px);
     width: 100%;
+    padding-inline: 5px;
   }
 
   &__plan {
@@ -1036,9 +1041,15 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     height: 422px;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     box-shadow: 0 0 50px rgb(132, 146, 175, 0.2);
     width: 100%;
+    transition: transform 1s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &__text {
@@ -1066,6 +1077,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   &__name {
     margin-top: 49px;
