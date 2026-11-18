@@ -434,9 +434,8 @@ body {
   padding: 9.766% 0 10.643% 0;
 }
 .drag-drop__about {
-  flex-shrink: 0;
-  width: 100%;
-  max-width: 518px;
+  flex: 0 1 30.292%;
+  min-width: 0;
   margin-bottom: auto;
   margin-left: 10.409%;
   display: flex;
@@ -539,7 +538,6 @@ body {
 }
 
 .about {
-  max-width: 518px;
   gap: 48px;
 }
 .about__title {
@@ -548,15 +546,22 @@ body {
   font-weight: 100;
   color: #ffffff;
 }
-.about__text {
-  height: 138px;
-  color: #8492af;
-  line-height: 166.6666666667%;
-}
 .about__buttons-arrows {
   margin-bottom: 11px;
   display: flex;
   gap: 15px;
+}
+.about__slider {
+  color: #8492af;
+  line-height: 166.6666666667%;
+  overflow: hidden;
+}
+.about__feed {
+  display: flex;
+  transition: transform 0.5s ease-out;
+}
+.about__slide {
+  flex: 0 0 100%;
 }
 .about__button {
   background: transparent;

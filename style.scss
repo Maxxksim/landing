@@ -526,9 +526,8 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   }
 
   &__about {
-    flex-shrink: 0;
-    width: 100%;
-    max-width: 518px;
+    flex: 0 1 30.292%;
+    min-width: 0;
     margin-bottom: auto;
     margin-left: 10.409%;
     display: flex;
@@ -658,7 +657,6 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
 }
 
 .about {
-  max-width: 518px;
   gap: 48px;
 
   &__title {
@@ -668,16 +666,25 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     color: #ffffff;
   }
 
-  &__text {
-    height: 138px;
-    color: #8492af;
-    line-height: calc(30 / 18 * 100%);
-  }
-
   &__buttons-arrows {
     margin-bottom: 11px;
     display: flex;
     gap: 15px;
+  }
+
+  &__slider {
+    color: #8492af;
+    line-height: calc(30 / 18 * 100%);
+    overflow: hidden;
+  }
+
+  &__feed {
+    display: flex;
+    transition: transform 0.5s ease-out;
+  }
+
+  &__slide {
+    flex: 0 0 100%;
   }
 
   &__button {
