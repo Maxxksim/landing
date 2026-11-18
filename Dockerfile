@@ -12,6 +12,6 @@ RUN npm run build
 
 FROM caddy:2
 
-COPY .conf/caddy/Caddyfile /etc/caddy/Caddyfile
+COPY ./conf/caddy/Caddyfile /etc/caddy/Caddyfile
 
 COPY --from=build /app/dist /srv
