@@ -2,7 +2,7 @@ Steps to start the project:
 
 Clone the project to yourself
 
-Open a terminal in root directory
+Open a terminal in the project's root directory
 
 Enter the commands in the terminal:
 
