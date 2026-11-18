@@ -1,0 +1,4 @@
+chahin.albedo.dev {
+	root /srv
+	file_server
+}
