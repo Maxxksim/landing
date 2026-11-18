@@ -84,6 +84,11 @@ body {
   width: clamp(125px, 8vw, 160px);
 }
 
+@media (width <= 1200px) {
+  .header__container {
+    min-height: 100px;
+  }
+}
 .body_locked {
   overflow: hidden;
 }
@@ -840,10 +845,10 @@ body {
 .pricing__plans {
   margin-top: 90px;
   display: flex;
-  flex: 0 1 360px;
   justify-content: center;
   flex-wrap: wrap;
   gap: clamp(30px, 6.809px + 7.73vw, 139px);
+  width: 100%;
 }
 .pricing__plan {
   max-width: 360px;
