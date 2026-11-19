@@ -160,15 +160,16 @@ body {
   .menu {
     &_opened {
       display: flex;
-      font-size: 24px;
-      font-weight: 700;
+      font-size: 14px;
+      font-weight: 500;
       color: #ffffff;
       position: absolute;
 
       inset: 0;
       background-color: #8492af;
-      width: 70%;
-      height: 2000px;
+      width: fit-content;
+      height: fit-content;
+      border-bottom-left-radius: 15px;
     }
 
     &__closing-menu-button {
@@ -181,8 +182,9 @@ body {
     &__list {
       display: flex;
       flex-direction: column;
-      margin-top: 100px;
-      margin-left: 35%;
+
+      margin-left: 0;
+      padding: 70px 10px 30px 10px;
     }
 
     &__button {
@@ -194,8 +196,8 @@ body {
     &_opened &__closing-menu-button {
       display: block;
       position: absolute;
-      top: 30px;
-      left: 15px;
+      top: 15%;
+      left: 35%;
     }
   }
 }

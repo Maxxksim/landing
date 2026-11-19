@@ -140,14 +140,17 @@ body {
   }
   .menu_opened {
     display: flex;
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 500;
     color: #ffffff;
     position: absolute;
     inset: 0;
     background-color: #8492af;
-    width: 70%;
-    height: 2000px;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-bottom-left-radius: 15px;
   }
   .menu__closing-menu-button {
     display: block;
@@ -158,8 +161,8 @@ body {
   .menu__list {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
-    margin-left: 35%;
+    margin-left: 0;
+    padding: 70px 10px 30px 10px;
   }
   .menu__button {
     background-color: none;
@@ -169,8 +172,8 @@ body {
   .menu_opened .menu__closing-menu-button {
     display: block;
     position: absolute;
-    top: 30px;
-    left: 15px;
+    top: 15%;
+    left: 35%;
   }
 }
 .closing-menu-button {
