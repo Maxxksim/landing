@@ -450,6 +450,7 @@ body {
   .drag-drop__about {
     margin: 0;
     text-align: center;
+    align-items: center;
   }
 }
 
