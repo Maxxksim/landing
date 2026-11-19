@@ -173,10 +173,8 @@ body {
     }
 
     &__closing-menu-button {
-      display: block;
-      position: absolute;
-      top: 40px;
-      right: 30px;
+      width: 30px;
+      height: 30px;
     }
 
     &__list {
@@ -184,7 +182,7 @@ body {
       flex-direction: column;
 
       margin-left: 0;
-      padding: 70px 10px 30px 10px;
+      padding: 50px 10px 15px 10px;
     }
 
     &__button {
@@ -196,20 +194,18 @@ body {
     &_opened &__closing-menu-button {
       display: block;
       position: absolute;
-      top: 15%;
+      top: 10px;
       left: 35%;
     }
   }
 }
 
 .closing-menu-button {
-  position: relative;
-
   &__first-line,
   &__second-line {
     position: absolute;
-    top: 50%;
     left: 0;
+    top: 50%;
     width: 30px;
     height: 2px;
     background-color: #ffffff;

@@ -153,16 +153,14 @@ body {
     border-bottom-left-radius: 15px;
   }
   .menu__closing-menu-button {
-    display: block;
-    position: absolute;
-    top: 40px;
-    right: 30px;
+    width: 30px;
+    height: 30px;
   }
   .menu__list {
     display: flex;
     flex-direction: column;
     margin-left: 0;
-    padding: 70px 10px 30px 10px;
+    padding: 50px 10px 15px 10px;
   }
   .menu__button {
     background-color: none;
@@ -172,17 +170,14 @@ body {
   .menu_opened .menu__closing-menu-button {
     display: block;
     position: absolute;
-    top: 15%;
+    top: 10px;
     left: 35%;
   }
 }
-.closing-menu-button {
-  position: relative;
-}
 .closing-menu-button__first-line, .closing-menu-button__second-line {
   position: absolute;
-  top: 50%;
   left: 0;
+  top: 50%;
   width: 30px;
   height: 2px;
   background-color: #ffffff;
