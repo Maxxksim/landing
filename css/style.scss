@@ -1159,8 +1159,8 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   &__text {
     text-align: end;
     top: 29px;
-    width: 1000%;
-    max-width: 243;
+    width: 243px;
+    text-align: start;
   }
 }
 
@@ -1252,6 +1252,9 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
 
     &__text {
       top: 29px;
+      text-align: end;
+      width: 1000%;
+      max-width: 243;
     }
   }
 

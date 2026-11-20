@@ -925,8 +925,8 @@ body {
 .item-layout__text {
   text-align: end;
   top: 29px;
-  width: 1000%;
-  max-width: 243;
+  width: 243px;
+  text-align: start;
 }
 
 .line-dot {
@@ -1004,6 +1004,9 @@ body {
   }
   .item-layout__text {
     top: 29px;
+    text-align: end;
+    width: 1000%;
+    max-width: 243;
   }
   .layout__about {
     margin: 40% 0 15% 0;
