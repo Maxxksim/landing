@@ -74,10 +74,10 @@ body {
   align-items: center;
 }
 .header__menu {
-  margin-right: clamp(0px, -388.286px + 26.964vw, 151px);
+  margin-right: 151px;
   margin-left: auto;
   color: #ffffff;
-  padding-left: 10px;
+  padding-left: 30px;
 }
 .header__burger-menu {
   margin-left: auto;
@@ -85,7 +85,7 @@ body {
 .header__logo {
   width: 233px;
   height: 65px;
-  margin-left: clamp(0px, -434.571px + 30.179vw, 169px);
+  margin-left: 169px;
 }
 
 .body_locked {
@@ -112,7 +112,7 @@ body {
 .menu__list {
   display: flex;
   align-items: center;
-  gap: clamp(10px, -32.051px + 4.103vw, 50px);
+  gap: 50px;
 }
 .menu__button {
   width: 130px;
@@ -201,6 +201,36 @@ body {
   transform: translateY(-50%) rotate(-45deg);
 }
 
+@media (width <= 1440px) {
+  .header__logo {
+    margin-left: 84.5px;
+  }
+  .header__menu {
+    margin-right: 75.5px;
+  }
+}
+@media (width <= 1025px) {
+  .header__container {
+    min-height: 100px;
+  }
+  .header__menu {
+    margin-right: 0px;
+  }
+  .header__logo {
+    margin-left: 0px;
+  }
+  .menu__list {
+    gap: 25px;
+  }
+}
+@media (width <= 768px) {
+  .header__menu {
+    padding-left: 10px;
+  }
+  .menu__list {
+    gap: 10px;
+  }
+}
 .main {
   flex: 1 1 auto;
 }
@@ -500,7 +530,7 @@ body {
   flex: 0 0 518px;
   min-width: 0;
   margin-bottom: auto;
-  margin-left: clamp(80px, -166.857px + 17.143vw, 176px);
+  margin-left: clamp(50px, -274px + 22.5vw, 176px);
   display: flex;
   flex-direction: column;
 }
@@ -1169,10 +1199,10 @@ body {
   margin-left: auto;
 }
 .footer__copyright {
-  margin-left: clamp(0px, -124.706px + 19.485vw, 265px);
+  margin-left: 265px;
 }
 .footer__social {
-  margin-right: clamp(0px, -124.706px + 19.485vw, 265px);
+  margin-right: 265px;
 }
 
 .social__list {
@@ -1187,9 +1217,29 @@ body {
 .menu-footer__list {
   display: flex;
   gap: clamp(10px, -14.935px + 3.247vw, 50px);
+  gap: 50px;
   margin-left: auto;
 }
 
+@media (width <= 1440px) {
+  .footer__copyright {
+    margin-left: 132.5px;
+  }
+  .footer__social {
+    margin-right: 132.5px;
+  }
+}
+@media (width <= 1025px) {
+  .footer__copyright {
+    margin-left: 33.125px;
+  }
+  .footer__social {
+    margin-right: 33.125px;
+  }
+  .menu-footer__list {
+    gap: 25px;
+  }
+}
 @media (width <= 768px) {
   .footer__container {
     flex-direction: column;
