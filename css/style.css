@@ -923,10 +923,8 @@ body {
   font-size: 24px;
 }
 .item-layout__text {
-  text-align: end;
   top: 29px;
-  width: 1000%;
-  max-width: 243;
+  width: 243px;
 }
 
 .line-dot {
@@ -1003,7 +1001,10 @@ body {
     right: 20px;
   }
   .item-layout__text {
+    text-align: end;
     top: 29px;
+    width: 1000%;
+    max-width: 243;
   }
   .layout__about {
     margin: 40% 0 15% 0;
