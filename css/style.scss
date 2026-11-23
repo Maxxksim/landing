@@ -502,18 +502,6 @@ body {
   }
 }
 
-@media (width < 375px) {
-  .item-introduction {
-    &__title {
-      font-size: 18px;
-    }
-
-    &__text {
-      font-size: 14px;
-    }
-  }
-}
-
 $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
 
 .gradient-transition {
@@ -605,19 +593,16 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
 @media (width < 1440px) {
   .browser {
     &__title {
-      font-size: 32px;
       margin-bottom: 29.5px;
     }
 
     &__text {
       gap: 21.5px;
-      font-size: 12px;
       margin-bottom: 17.5px;
       max-width: 628px;
     }
 
     &__list {
-      font-size: 12px;
       gap: 16.5px;
     }
   }
@@ -632,10 +617,6 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
 
     &__body {
       padding-bottom: 0;
-    }
-
-    &__picture {
-      margin-right: -15px;
     }
   }
 }
@@ -669,12 +650,11 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
 
     &__text {
       gap: 10.75px;
-      font-size: 10px;
+
       margin-bottom: 8.75px;
     }
 
     &__list {
-      font-size: 10px;
       gap: 8.25px;
     }
   }
@@ -1080,6 +1060,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 11.111%;
   }
 
   &__introduction {
@@ -1227,6 +1208,20 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   }
 }
 
+@media (width < 1440px) {
+  .layout {
+    &__body {
+      padding: 0 calc(11.111% / 2);
+    }
+  }
+
+  .item-layout {
+    &__text {
+      font-size: 14px;
+    }
+  }
+}
+
 @media (width < 1024px) {
   .item-layout {
     display: flex;
@@ -1271,6 +1266,10 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   }
 
   .layout {
+    &__body {
+      padding: 0;
+    }
+
     &__about {
       margin: 40% 0 20% 0;
 
@@ -1357,10 +1356,6 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   .item-layout {
     &__title {
       font-size: 12px;
-    }
-
-    &__text {
-      font-size: 8px;
     }
   }
 }
