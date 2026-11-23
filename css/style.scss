@@ -114,7 +114,7 @@ body {
     display: none;
   }
 
-  @media (width <= 1025px) {
+  @media (width < 1024px) {
     &__link {
       font-size: 16px;
     }
@@ -241,7 +241,7 @@ body {
   }
 }
 
-@media (width <= 1025px) {
+@media (width < 1024px) {
   .header {
     &__container {
       min-height: 100px;
@@ -263,7 +263,7 @@ body {
   }
 }
 
-@media (width <= 768px) {
+@media (width < 768px) {
   .header {
     &__menu {
       padding-left: 10px;
@@ -325,7 +325,7 @@ body {
   }
 }
 
-@media (width <= 1024px) {
+@media (width < 1024px) {
   .hero {
     &__title {
       font-size: 42px;
@@ -333,7 +333,7 @@ body {
   }
 }
 
-@media (width <= 768px) {
+@media (width < 768px) {
   .hero {
     &__title {
       font-size: 22px;
@@ -345,7 +345,7 @@ body {
   }
 }
 
-@media (width <= 375px) {
+@media (width < 375px) {
   .hero {
     &__title {
       font-size: 18px;
@@ -502,7 +502,7 @@ body {
   }
 }
 
-@media (width <= 375px) {
+@media (width < 375px) {
   .item-introduction {
     &__title {
       font-size: 18px;
@@ -543,19 +543,18 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   background-color: #f6f7fa;
 
   &__container {
-    position: relative;
     display: flex;
   }
 
   &__body {
-    padding: clamp(0px, calc(-549.667px + 32.333vw), 97px) 0 0
-      clamp(0px, calc(-1484.667px + 87.333vw), 262px);
+    padding: 4.5% 0 14% clamp(0px, calc(-1484.667px + 87.333vw), 262px);
+    margin-right: 0.9%;
   }
 
   &__picture {
     max-width: 1306px;
     max-height: 667px;
-    margin: 0 -13.567% 4.5% 38px;
+    margin: 18px -11.7% 4.5% 0;
 
     & img {
       width: 100%;
@@ -575,8 +574,8 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     font-size: 60px;
     color: #0e1a35;
     font-weight: 100;
-
     margin-bottom: 59px;
+    white-space: nowrap;
   }
 
   &__text {
@@ -614,6 +613,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
       gap: 21.5px;
       font-size: 12px;
       margin-bottom: 17.5px;
+      max-width: 628px;
     }
 
     &__list {
@@ -628,6 +628,9 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     &__container {
       display: flex;
       flex-direction: column;
+    }
+
+    &__body {
       padding-bottom: 0;
     }
   }
@@ -653,7 +656,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   }
 }
 
-@media (width <= 375px) {
+@media (width < 375px) {
   .browser {
     &__title {
       font-size: 26px;
@@ -905,7 +908,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   }
 }
 
-@media (width <= 1440px) {
+@media (width < 1440px) {
   .drag-drop {
     &__body {
       flex-direction: column-reverse;
@@ -920,7 +923,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   }
 }
 
-@media (width <= 1025px) {
+@media (width < 1024px) {
   .tasks {
     flex-direction: column;
     max-width: 392px;
@@ -966,7 +969,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   }
 }
 
-@media (width <= 768px) {
+@media (width < 768px) {
   .about {
     gap: 24px;
 
@@ -1267,7 +1270,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
 
   .layout {
     &__about {
-      margin: 40% 0 15% 0;
+      margin: 40% 0 20% 0;
 
       > :nth-child(2),
       > :nth-child(3) {
@@ -1316,7 +1319,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   }
 }
 
-@media (width <= 768px) {
+@media (width < 768px) {
   .section-introduction {
     &__title {
       font-size: 32px;
@@ -1338,7 +1341,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   }
 }
 
-@media (width <= 375px) {
+@media (width < 375px) {
   .section-introduction {
     &__title {
       font-size: 26px;
@@ -1377,7 +1380,6 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     margin-top: 90px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 139px;
     width: 100%;
   }
@@ -1475,19 +1477,19 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   }
 }
 
-@media (width <= 768px) {
+@media (width < 1440px) {
   .pricing {
-    &__title {
-      font-size: 42px;
-    }
-
-    &__text {
-      text-align: center;
-      margin-top: 54.5px;
-    }
-
     &__plans {
-      gap: 69.5px;
+      gap: 34.37px;
+    }
+  }
+}
+
+@media (width < 1024px) {
+  .pricing {
+    &__plans {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
@@ -1542,7 +1544,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   }
 }
 
-@media (width <= 1440px) {
+@media (width < 1440px) {
   .footer {
     &__copyright {
       margin-left: 132.5px;
@@ -1554,7 +1556,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   }
 }
 
-@media (width <= 1025px) {
+@media (width < 1024px) {
   .footer {
     &__copyright {
       margin-left: 33.125px;
@@ -1572,7 +1574,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   }
 }
 
-@media (width <= 768px) {
+@media (width < 768px) {
   .footer {
     &__container {
       flex-direction: column;
