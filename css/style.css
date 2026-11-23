@@ -432,7 +432,7 @@ body {
 .browser__picture {
   max-width: 1306px;
   max-height: 667px;
-  margin: 18px -11.7% 4.5% 0;
+  margin: 18px -13.684% 4.5% 18px;
 }
 .browser__picture img {
   width: 100%;
@@ -495,6 +495,9 @@ body {
   }
   .browser__body {
     padding-bottom: 0;
+  }
+  .browser__picture {
+    margin-right: -15px;
   }
 }
 @media (width < 768px) {
