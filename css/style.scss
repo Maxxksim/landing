@@ -229,7 +229,7 @@ body {
   }
 }
 
-@media (width <= 1440px) {
+@media (width < 1440px) {
   .header {
     &__logo {
       margin-left: 84.5px;
@@ -554,7 +554,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   &__picture {
     max-width: 1306px;
     max-height: 667px;
-    margin: 18px -11.7% 4.5% 0;
+    margin: 18px -13.684% 4.5% 18px;
 
     & img {
       width: 100%;
@@ -632,6 +632,10 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
 
     &__body {
       padding-bottom: 0;
+    }
+
+    &__picture {
+      margin-right: -15px;
     }
   }
 }
@@ -1167,10 +1171,8 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   }
 
   &__text {
-    text-align: end;
     top: 29px;
     width: 243px;
-    text-align: start;
   }
 }
 
@@ -1261,8 +1263,8 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     }
 
     &__text {
-      top: 29px;
       text-align: end;
+      top: 29px;
       width: 1000%;
       max-width: 243;
     }
