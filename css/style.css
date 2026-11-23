@@ -201,7 +201,7 @@ body {
   transform: translateY(-50%) rotate(-45deg);
 }
 
-@media (width <= 1440px) {
+@media (width < 1440px) {
   .header__logo {
     margin-left: 84.5px;
   }
