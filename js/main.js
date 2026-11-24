@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const burgerMenuBtn = document.getElementById('burger-menu-btn')
+  const burgerMenuOpenBtn = document.getElementById('burger-menu-opening-btn')
   const menu = document.getElementById('menu')
-  const menuCloseBtn = document.getElementById('menu-close-btn')
+  const burgerMenuCloseBtn = document.getElementById('burger-menu-closing-btn')
   const body = document.getElementById('body')
   const prevBtn = document.getElementById('prev-btn')
   const nextBtn = document.getElementById('next-btn')
@@ -10,12 +10,14 @@ document.addEventListener('DOMContentLoaded', () => {
   let slideIndex = 0
   let feedPosition = 0
 
-  burgerMenuBtn.addEventListener('click', () => {
-    menu.classList.add('menu_opened')
+  burgerMenuOpenBtn.addEventListener('click', () => {
+    burgerMenuOpenBtn.classList.add('burger-menu__opening-btn_hidden')
+    burgerMenuCloseBtn.classList.add('burger-menu__closing-btn_active')
+    menu.classList.add('header__menu_opened')
     body.classList.add('body_locked')
   })
 
-  menuCloseBtn.addEventListener('click', () => {
+  burgerMenuCloseBtn.addEventListener('click', () => {
     closeMenu()
   })
 
@@ -30,7 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   function closeMenu () {
-    menu.classList.remove('menu_opened')
+    burgerMenuOpenBtn.classList.remove('burger-menu__opening-btn_hidden')
+    burgerMenuCloseBtn.classList.remove('burger-menu__closing-btn_active')
+    menu.classList.remove('header__menu_opened')
     document.body.classList.remove('body_locked')
   }
 
