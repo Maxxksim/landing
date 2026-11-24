@@ -324,8 +324,8 @@ body {
 .features__body {
   display: flex;
   justify-content: center;
-  margin-top: 262px;
-  margin-bottom: 37px;
+  padding: 0 65px;
+  margin: 262px 0 37px 0;
   width: 100%;
 }
 .features__line-block {
@@ -395,7 +395,7 @@ body {
 
 @media (width < 1440px) {
   .features__column_line {
-    flex: 0 0 60px;
+    flex: 0 0 30px;
   }
 }
 @media (width < 1024px) {
@@ -436,7 +436,7 @@ body {
   display: flex;
 }
 .browser__body {
-  padding: 4.5% 0 14% clamp(0px, -1484.667px + 87.333vw, 262px);
+  padding: 4.5% 0 14% clamp(115px, -39.23px + 15.061vw, 262px);
   margin-right: 0.9%;
 }
 .browser__picture {
@@ -501,7 +501,7 @@ body {
     flex-direction: column;
   }
   .browser__body {
-    padding-bottom: 0;
+    padding: 0 0 0 10px;
   }
 }
 @media (width < 768px) {
@@ -1109,6 +1109,7 @@ body {
   justify-content: center;
   gap: 139px;
   width: 100%;
+  padding: 0 30px;
 }
 .pricing__plan {
   max-width: 360px;
@@ -1199,6 +1200,7 @@ body {
   .pricing__plans {
     flex-direction: column;
     align-items: center;
+    padding: 0 5px;
   }
 }
 .footer {

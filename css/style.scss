@@ -419,8 +419,8 @@ body {
   &__body {
     display: flex;
     justify-content: center;
-    margin-top: 262px;
-    margin-bottom: 37px;
+    padding: 0 65px;
+    margin: 262px 0 37px 0;
     width: 100%;
   }
 
@@ -503,7 +503,7 @@ body {
 @media (width < 1440px) {
   .features {
     &__column_line {
-      flex: 0 0 60px;
+      flex: 0 0 30px;
     }
   }
 }
@@ -560,7 +560,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   }
 
   &__body {
-    padding: 4.5% 0 14% clamp(0px, calc(-1484.667px + 87.333vw), 262px);
+    padding: 4.5% 0 14% clamp(115px, calc(-39.23px + 15.061vw), 262px);
     margin-right: 0.9%;
   }
 
@@ -641,7 +641,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     }
 
     &__body {
-      padding-bottom: 0;
+      padding: 0 0 0 10px;
     }
   }
 }
@@ -1404,6 +1404,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     justify-content: center;
     gap: 139px;
     width: 100%;
+    padding: 0 30px;
   }
 
   &__plan {
@@ -1512,6 +1513,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     &__plans {
       flex-direction: column;
       align-items: center;
+      padding: 0 5px;
     }
   }
 }
