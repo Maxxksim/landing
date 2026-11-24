@@ -434,7 +434,6 @@ body {
   &__column_line {
     flex: 0 0 125px;
     min-width: 0;
-    align-self: stretch;
   }
 }
 
@@ -503,7 +502,7 @@ body {
 @media (width < 1440px) {
   .features {
     &__column_line {
-      flex: 0 0 30px;
+      flex: 0 0 60px;
     }
   }
 }
