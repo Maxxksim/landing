@@ -302,10 +302,6 @@ body {
   }
 }
 
-.main {
-  flex: 1 1 auto;
-}
-
 //hero section
 
 .hero {
@@ -326,7 +322,7 @@ body {
   }
 
   &__text {
-    font-size: 34px;
+    font-size: 36px;
     color: #8492af;
     margin: 20px 0px 0px 0px;
   }
@@ -353,7 +349,7 @@ body {
 @media (width < 1024px) {
   .hero {
     &__title {
-      font-size: 42px;
+      font-size: 46px;
     }
   }
 }
@@ -361,7 +357,7 @@ body {
 @media (width < 768px) {
   .hero {
     &__title {
-      font-size: 22px;
+      font-size: 36px;
     }
 
     &__text {
@@ -373,7 +369,11 @@ body {
 @media (width < 375px) {
   .hero {
     &__title {
-      font-size: 18px;
+      font-size: 26px;
+    }
+
+    &__text {
+      font-size: 14px;
     }
   }
 }
@@ -508,6 +508,16 @@ body {
 }
 
 @media (width < 1024px) {
+  .item-introduction {
+    &__title {
+      font-size: 18px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+
   .features {
     &__body {
       display: flex;
@@ -522,6 +532,22 @@ body {
       > :nth-child(4) {
         display: none;
       }
+    }
+  }
+}
+
+@media (width < 375px) {
+  .item-introduction {
+    &__text {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (width < 375px) {
+  .item-introduction {
+    &__text {
+      font-size: 12px;
     }
   }
 }
@@ -642,24 +668,36 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     &__body {
       padding: 0 0 0 10px;
     }
+
+    &__title {
+      font-size: 42px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__list {
+      font-size: 16px;
+    }
   }
 }
 
 @media (width < 768px) {
   .browser {
     &__title {
-      font-size: 32px;
+      font-size: 24px;
       margin-bottom: 29.5px;
     }
 
     &__text {
       gap: 21.5px;
-      font-size: 12px;
+      font-size: 14px;
       margin-bottom: 17.5px;
     }
 
     &__list {
-      font-size: 12px;
+      font-size: 14px;
       gap: 16.5px;
     }
   }
@@ -668,17 +706,18 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
 @media (width < 375px) {
   .browser {
     &__title {
-      font-size: 26px;
+      font-size: 18px;
       margin-bottom: 14.75px;
     }
 
     &__text {
       gap: 10.75px;
-
+      font-size: 12px;
       margin-bottom: 8.75px;
     }
 
     &__list {
+      font-size: 12px;
       gap: 8.25px;
     }
   }
@@ -932,6 +971,16 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
 }
 
 @media (width < 1024px) {
+  .about {
+    &__title {
+      font-size: 42px;
+    }
+
+    &__slide {
+      font-size: 16px;
+    }
+  }
+
   .tasks {
     flex-direction: column;
     max-width: 392px;
@@ -982,11 +1031,11 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     gap: 24px;
 
     &__title {
-      font-size: 42px;
+      font-size: 24px;
     }
 
     &__slide {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 
@@ -1172,7 +1221,6 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     bottom: 15px;
     width: max-content;
     text-align: right;
-    font-size: 24px;
   }
 
   &__text {
@@ -1185,7 +1233,6 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   position: relative;
   display: flex;
   align-items: center;
-  width: 100%;
   flex: none;
   align-self: auto;
 
@@ -1236,12 +1283,6 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   .layout {
     &__body {
       padding: 0 calc(11.111% / 2);
-    }
-  }
-
-  .item-layout {
-    &__text {
-      font-size: 14px;
     }
   }
 }
@@ -1344,24 +1385,26 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   }
 }
 
+@media (width < 1024px) {
+  .section-introduction {
+    &__title {
+      font-size: 42px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+}
+
 @media (width < 768px) {
   .section-introduction {
     &__title {
-      font-size: 32px;
+      font-size: 24px;
     }
 
     &__text {
       font-size: 14px;
-    }
-  }
-
-  .item-layout {
-    &__title {
-      font-size: 14px;
-    }
-
-    &__text {
-      font-size: 8px;
     }
   }
 }
@@ -1369,16 +1412,10 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
 @media (width < 375px) {
   .section-introduction {
     &__title {
-      font-size: 26px;
+      font-size: 18px;
     }
 
     &__text {
-      font-size: 10px;
-    }
-  }
-
-  .item-layout {
-    &__title {
       font-size: 12px;
     }
   }
@@ -1515,6 +1552,16 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
       padding: 0 5px;
     }
   }
+
+  .plan {
+    &__name {
+      font-size: 18px;
+    }
+
+    &__list {
+      font-size: 16px;
+    }
+  }
 }
 
 //footer
@@ -1581,6 +1628,8 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
 
 @media (width < 1024px) {
   .footer {
+    font-size: 16px;
+
     &__copyright {
       margin-left: 33.125px;
     }
@@ -1598,7 +1647,15 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
 }
 
 @media (width < 768px) {
+  .plan {
+    &__list {
+      font-size: 14px;
+    }
+  }
+
   .footer {
+    font-size: 14px;
+
     &__container {
       flex-direction: column;
       align-items: center;
@@ -1617,5 +1674,17 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     &__social {
       margin-right: 0;
     }
+  }
+}
+
+@media (width < 375px) {
+  .plan {
+    &__list {
+      font-size: 12px;
+    }
+  }
+
+  .footer {
+    font-size: 12px;
   }
 }
