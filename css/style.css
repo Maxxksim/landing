@@ -86,7 +86,7 @@ body {
 }
 .header__logo {
   width: 233px;
-  height: 65px;
+  height: auto;
   margin-left: 169px;
 }
 
@@ -146,21 +146,13 @@ body {
   }
 }
 @media (width < 768px) {
-  header__menu {
-    padding-left: 10px;
-  }
-  .menu__link {
-    font-size: 14px;
-  }
-  .menu__list {
-    gap: 10px;
-  }
-}
-@media (width < 640px) {
   .header__container {
     padding-top: 10px;
     grid-template-columns: 1fr auto;
     gap: 10px;
+  }
+  .header__logo {
+    width: 116.5px;
   }
   .header__menu {
     margin: 0;
