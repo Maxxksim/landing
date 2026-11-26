@@ -118,7 +118,7 @@ body {
     box-shadow 0.3s ease;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background-color: #8492af;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
   }
@@ -148,7 +148,7 @@ body {
       color 0.3s ease;
 
     &:hover,
-    &:focus {
+    &:focus-visible {
       background-color: #5584ff;
       color: #ffffff;
     }
@@ -247,7 +247,7 @@ body {
       }
 
       &:hover > *,
-      &:focus > * {
+      &:focus-visible > * {
         box-shadow: 0 0 8px rgba(85, 132, 255, 1);
         scale: 1.3;
       }
@@ -330,7 +330,7 @@ body {
       transition: color 0.3s ease;
 
       &:hover,
-      &:focus {
+      &:focus-visible {
         color: #0a66ff;
         background: none;
       }
@@ -347,7 +347,7 @@ body {
   transition: color 0.3s ease;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     color: #0a66ff;
   }
 }
@@ -537,7 +537,7 @@ body {
       box-shadow 0.3s ease;
 
     &:hover,
-    &:focus {
+    &:focus-visible {
       background-color: #5584ff;
       color: #ffffff;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -962,7 +962,8 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     box-shadow: 0 4px 10px rgba(85, 132, 255, 0);
     transition: box-shadow 0.3s ease;
 
-    &:hover {
+    &:hover,
+    :focus-visible {
       box-shadow: 0 6px 14px rgba(132, 146, 175, 0.5);
       transform: scale(1.2);
     }
