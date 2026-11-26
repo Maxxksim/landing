@@ -942,8 +942,8 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   &__button {
     background: transparent;
     position: relative;
-    width: 44px;
-    height: 44px;
+    width: 35px;
+    height: 35px;
     border: 1px solid #8492af;
     border-radius: 50%;
 
@@ -971,9 +971,16 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     transition: box-shadow 0.3s ease;
 
     &:hover,
-    :focus-visible {
+    &:focus-visible {
       box-shadow: 0 6px 14px rgba(132, 146, 175, 0.5);
       transform: scale(1.2);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: -5px;
+      border-radius: 50%;
     }
   }
 }
