@@ -79,7 +79,7 @@ body {
   }
 
   &__menu {
-    margin-right: 151px;
+    margin-right: 137px;
     justify-self: end;
     justify-content: center;
 
@@ -94,7 +94,7 @@ body {
   &__logo {
     width: 233px;
     height: auto;
-    margin-left: 169px;
+    margin-left: 145px;
   }
 }
 
@@ -378,12 +378,12 @@ body {
   }
 
   &__button {
-    margin-top: 4.678%;
+    margin-top: 4%;
   }
 
   &__picture {
     max-width: 882px;
-    margin-top: 5.145%;
+    margin-top: 4.4%;
     margin-bottom: -7.486%;
     z-index: 0;
     box-shadow: 0 -10px 100px -10px rgba(85, 132, 255, 0.25);
@@ -448,7 +448,7 @@ body {
     url("./../img/background/Grid.svg");
   background-repeat: no-repeat, no-repeat;
   background-size:
-    2131px 527px,
+    2000px 527px,
     100% 100%,
     auto;
   background-color: #0e1a35;
@@ -487,7 +487,7 @@ body {
 
   &__line-block {
     position: absolute;
-    top: 37px;
+    top: 50px;
     left: 50%;
     transform: translateX(-50%);
     width: 220px;
@@ -614,6 +614,10 @@ body {
   }
 
   .item-introduction {
+    &__title {
+      font-size: 16px;
+    }
+
     &__text {
       font-size: 14px;
     }
@@ -661,13 +665,13 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   }
 
   &__body {
-    padding: 98px 0 14% clamp(115px, calc(-39.23px + 15.061vw), 262px);
+    padding: 98px 38px 14% 249px;
   }
 
   &__picture {
     max-width: 1306px;
     max-height: 667px;
-    margin: 18px -12.95% 4.5% 18px;
+    margin: 18px -13.55% 4.5% 18px;
 
     & img {
       width: 100%;
@@ -687,23 +691,24 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     font-size: 60px;
     color: #0e1a35;
     font-weight: 100;
-    margin-bottom: 59px;
     white-space: nowrap;
   }
 
   &__text {
+    margin-top: 45px;
     display: flex;
     color: #8492af;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
     line-height: calc(30 / 18 * 100%);
     max-width: 580px;
     flex-direction: column;
-    gap: 43px;
+    gap: 30px;
   }
 
   &__list {
+    font-size: 22px;
     display: flex;
-    line-height: calc(30 / 18 * 100%);
+    line-height: calc(30 / 22 * 100%);
     flex-direction: column;
     gap: 33px;
   }
@@ -717,18 +722,19 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
 
 @media (width < 1440px) {
   .browser {
-    &__title {
-      margin-bottom: 29.5px;
-    }
-
     &__text {
       gap: 21.5px;
       margin-bottom: 17.5px;
+      margin-top: 22.5px;
       max-width: 628px;
     }
 
     &__list {
       gap: 16.5px;
+    }
+
+    &__body {
+      padding: 50px 0 14% 110px;
     }
   }
 }
@@ -824,7 +830,8 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     flex: 0 0 518px;
     min-width: 0;
     margin-bottom: auto;
-    margin-left: clamp(50px, calc(-274px + 22.5vw), 176px);
+    margin-left: clamp(20px, calc(-388.857px + 28.393vw), 179px);
+    margin-right: clamp(10px, calc(-758.857px + 53.393vw), 309px);
     display: flex;
     flex-direction: column;
   }
@@ -836,6 +843,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   justify-content: center;
   width: 100%;
   max-width: 834px;
+  margin-left: 20px;
 
   &__progress {
     display: flex;
@@ -1068,6 +1076,10 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
       flex: 0 0 0;
       margin-bottom: 100px;
     }
+
+    .tasks {
+      margin: 0;
+    }
   }
 }
 
@@ -1152,6 +1164,18 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
 
   .task-card {
     &__title {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (width < 375px) {
+  .about {
+    &__title {
+      font-size: 18px;
+    }
+
+    &__slide {
       font-size: 12px;
     }
   }
@@ -1410,7 +1434,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
 
     &_reversed {
       > :nth-child(1) {
-        left: calc(54.928% + 12px);
+        left: calc(54.928% + 5px);
         right: auto;
         top: auto;
         bottom: 8%;
@@ -1427,7 +1451,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
 
       > :nth-child(3) {
         left: auto;
-        right: calc(47.228% + 15px);
+        right: calc(47.228% + 5px);
         top: auto;
         bottom: 8%;
         max-width: calc(52.772%);
@@ -1437,7 +1461,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
 
     &__title {
       left: auto;
-      right: calc(54.928% + 15px);
+      right: calc(54.928% + 5px);
 
       bottom: auto;
       max-width: calc(45.072%);
@@ -1445,7 +1469,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     }
 
     &__text {
-      left: calc(47.228% + 15px);
+      left: calc(47.228% + 5px);
       top: 0;
       width: 243px;
       max-width: calc(52.772%);
@@ -1604,7 +1628,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   }
 
   &__price {
-    margin-top: 57px;
+    margin-top: 45px;
     > * {
       margin-top: auto;
     }
@@ -1614,7 +1638,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     margin: 55px 0 47px 0;
     display: flex;
     flex-direction: column;
-    gap: 23px;
+    gap: 16px;
   }
 
   &__item {
@@ -1645,6 +1669,7 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   &__per-period {
     color: #8492af;
     font-weight: 400;
+    font-size: 24px;
   }
 }
 
@@ -1711,18 +1736,17 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   }
 
   &__copyright {
-    margin-left: 265px;
+    margin-left: 250px;
   }
 
   &__social {
-    margin-right: 265px;
+    margin-right: 225px;
   }
 }
 
 .social {
   &__list {
     display: flex;
-    gap: 16px;
   }
 
   &__icon {
@@ -1743,11 +1767,17 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
 @media (width < 1440px) {
   .footer {
     &__copyright {
-      margin-left: 132.5px;
+      margin-left: 125px;
     }
 
     &__social {
-      margin-right: 132.5px;
+      margin-right: 112.5px;
+    }
+
+    .menu-footer {
+      &__list {
+        gap: 25px;
+      }
     }
   }
 }
@@ -1764,16 +1794,14 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
       margin-right: 33.125px;
     }
   }
-
-  .menu-footer {
-    &__list {
-      gap: 25px;
-    }
-  }
 }
 
 @media (width < 768px) {
   .plan {
+    &__name {
+      font-size: 16px;
+    }
+
     &__list {
       font-size: 14px;
     }
