@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const sliderFeed = document.getElementById('slider-feed')
   const slides = sliderFeed.children
   let slideIndex = 0
-  let feedPosition = 0
 
   burgerMenuOpenBtn.addEventListener('click', () => {
     burgerMenuOpenBtn.classList.add('burger-menu__opening-btn_hidden')
@@ -38,21 +37,14 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.remove('body_locked')
   }
 
-  window.addEventListener('resize', () => {
-    if (window.innerWidth >= 640) {
-      closeMenu()
-    }
-  })
-
   nextBtn.addEventListener('click', () => {
     if (slideIndex + 1 === slides.length) {
       return
     }
 
-    feedPosition += 518 * 3
     slides[slideIndex].classList.remove('about__slide_active')
     slides[++slideIndex].classList.add('about__slide_active')
-    sliderFeed.style.transform = `translateX(-${(feedPosition / (518 * slides.length)) * 100}%)`
+    sliderFeed.style.transform = `translateX(-${slideIndex * 100}%)`
   })
 
   prevBtn.addEventListener('click', () => {
@@ -60,9 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
       return
     }
 
-    feedPosition -= 518 * 3
     slides[slideIndex].classList.remove('about__slide_active')
     slides[--slideIndex].classList.add('about__slide_active')
-    sliderFeed.style.transform = `translateX(-${(feedPosition / (518 * slides.length)) * 100}%)`
+    sliderFeed.style.transform = `translateX(-${slideIndex * 100}%)`
   })
 })

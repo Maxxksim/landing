@@ -1,3 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
-  <image id="Inteligentny_obiekt_wektorowy" data-name="Inteligentny obiekt wektorowy" width="80" height="80" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAACM0lEQVR4nO2cPW7CQBCFn50EKUUKbpAjpKYiVXofIidAonHpBokT5BAcIA1UqblJgiiQQJEjnEVCFln/PI+xlfdViNHurD957fHa2gAGREn6BGAG4Nn1vgQwXcTB2iJfnjbzNy7QDf4DwH0utAMwspbYdv6wyc4cswuDh/tvZpDvqvktBD7XjPUyv4XAu5qxXua3EPivkEASCSTJypizumkMYNDnA2qBPYDVqa4MPHWT8JPVlaGnbhJ+sroydNNW1GMc6ppHMdBdmEQCSSSQ5LZE80cAmwppPgviQ7Ojscnv7a+MwM0iDr7KZouS1Buv0lcdms5f1J+mMIkEklgIPNSM9TK/hcBlzVgv81sInLoH7Tw7F7Om1fyNC3RvvUYA3t2UObjf5m/krpG/TBlTGTfQF4u+y9Bmft2FSSSQRAJJJJBEAkkkkEQCSSSQRAJJJJBEAkkafxaOkvQVwBzAQy60BTBZxMFbl9tXxeIMvDR4uP/mUZLedLx9JSwEXhr8ecwX70L7SugaSCKBJBJIYiFwWxDzxbvQvhIWAid/DPJURnx3vH0ljp/4+r9dAIbWn2N0mSI/ugaSSCCJBJJIIIkEkkggiQSSaD2QROuBJFoPJNE1kEQCSSSQROuBJFoPJNF6YAFaDzRGAkkkkEQCSSSQRAJJJJBEAkkkkEQCSSSQpMyzsPCgM5BEAkkkkCR0e4KKeuxDt6GqqMcq9OyzIvxk+9CEuX1WNJ2LOTr63YcmDtY/peHg5HQo58IAAAAASUVORK5CYII="/>
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="92" height="92">
+	<style>
+		.s0 { fill: none;stroke: #5384ff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4 } 
+		.s1 { fill: #5384ff } 
+	</style>
+	<g id="Warstwa 4">
+		<path id="&lt;Path&gt;" class="s0" d="m38 38h-36v-32h36z"/>
+		<path id="&lt;Path&gt;" class="s0" d="m28 2v8"/>
+		<path id="&lt;Path&gt;" class="s0" d="m12 2v8"/>
+		<path id="&lt;Path&gt;" class="s1" d="m13.06 22h-2.12c-0.52 0-0.94-0.42-0.94-0.94v-2.12c0-0.52 0.42-0.94 0.94-0.94h2.12c0.52 0 0.94 0.42 0.94 0.94v2.12c0 0.52-0.42 0.94-0.94 0.94z"/>
+		<path id="&lt;Path&gt;" class="s1" d="m21.06 22h-2.12c-0.52 0-0.94-0.42-0.94-0.94v-2.12c0-0.52 0.42-0.94 0.94-0.94h2.12c0.52 0 0.94 0.42 0.94 0.94v2.12c0 0.52-0.42 0.94-0.94 0.94z"/>
+		<path id="&lt;Path&gt;" class="s1" d="m29.06 22h-2.12c-0.52 0-0.94-0.42-0.94-0.94v-2.12c0-0.52 0.42-0.94 0.94-0.94h2.12c0.52 0 0.94 0.42 0.94 0.94v2.12c0 0.52-0.42 0.94-0.94 0.94z"/>
+		<path id="&lt;Path&gt;" class="s1" d="m13.06 30h-2.12c-0.52 0-0.94-0.42-0.94-0.94v-2.12c0-0.52 0.42-0.94 0.94-0.94h2.12c0.52 0 0.94 0.42 0.94 0.94v2.12c0 0.52-0.42 0.94-0.94 0.94z"/>
+		<path id="&lt;Path&gt;" class="s1" d="m21.06 30h-2.12c-0.52 0-0.94-0.42-0.94-0.94v-2.12c0-0.52 0.42-0.94 0.94-0.94h2.12c0.52 0 0.94 0.42 0.94 0.94v2.12c0 0.52-0.42 0.94-0.94 0.94z"/>
+		<path id="&lt;Path&gt;" class="s1" d="m29.06 30h-2.12c-0.52 0-0.94-0.42-0.94-0.94v-2.12c0-0.52 0.42-0.94 0.94-0.94h2.12c0.52 0 0.94 0.42 0.94 0.94v2.12c0 0.52-0.42 0.94-0.94 0.94z"/>
+	</g>
 </svg>
