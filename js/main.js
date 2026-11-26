@@ -37,12 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.remove('body_locked')
   }
 
-  window.addEventListener('resize', () => {
-    if (window.innerWidth >= 640) {
-      closeMenu()
-    }
-  })
-
   nextBtn.addEventListener('click', () => {
     if (slideIndex + 1 === slides.length) {
       return
