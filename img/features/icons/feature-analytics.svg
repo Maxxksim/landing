@@ -3,8 +3,8 @@
 		.s0 { fill: none;stroke: #5384ff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4 } 
 	</style>
 	<g id="Warstwa 3">
-		<g id="&lt;Group&gt;">
-			<path id="&lt;Path&gt;" class="s0" d="m2 30l2-8 8 14 6-20 10 26 8-40 8 20"/>
+		<g>
+			<path class="s0" d="m2 30l2-8 8 14 6-20 10 26 8-40 8 20"/>
 		</g>
 	</g>
 </svg>

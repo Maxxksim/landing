@@ -3,9 +3,9 @@
 		.s0 { fill: none;stroke: #5384ff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4 } 
 	</style>
 	<g id="Warstwa 2">
-		<g id="&lt;Group&gt;">
-			<path id="&lt;Path&gt;" class="s0" d="m38 36h-36v-12h36z"/>
-			<path id="&lt;Path&gt;" class="s0" d="m38 14h-36v-12h36z"/>
+		<g>
+			<path  class="s0" d="m38 36h-36v-12h36z"/>
+			<path  class="s0" d="m38 14h-36v-12h36z"/>
 		</g>
 	</g>
 </svg>
