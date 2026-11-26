@@ -121,6 +121,7 @@ body {
   &__list {
     display: flex;
     align-items: center;
+
     gap: 50px;
   }
 
@@ -132,6 +133,14 @@ body {
     border: 1px solid rgba(85, 132, 255, 0.3);
     color: #5584ff;
   }
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  min-width: 44px;
 }
 
 @media (width < 1440px) {
@@ -211,10 +220,20 @@ body {
     position: relative;
     display: flex;
 
+    &__opening-btn,
+    &__closing-btn {
+      width: 44px;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
+      background: none;
+    }
+
     &__opening-btn {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+
+      gap: 9px;
 
       &_hidden {
         display: none;
@@ -222,29 +241,26 @@ body {
     }
 
     &__closing-btn {
-      width: 30px;
-      height: 30px;
       display: none;
       &_active {
-        display: initial;
+        display: flex;
       }
     }
 
     &__burger-line {
-      background-color: #ffffff;
-      width: 45px;
+      width: 34px;
       height: 2px;
+      background-color: #ffffff;
     }
 
     &__cross-first-line,
     &__cross-second-line {
       position: absolute;
-      left: 0;
-      top: 50%;
-      width: 30px;
+      width: 34px;
       height: 2px;
       background-color: #ffffff;
       border-radius: 2px;
+      transition: transform 0.3s ease-in-out;
     }
 
     &__cross-first-line {
@@ -858,8 +874,8 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
   &__button {
     background: transparent;
     position: relative;
-    width: 35px;
-    height: 35px;
+    width: 44px;
+    height: 44px;
     border: 1px solid #8492af;
     border-radius: 50%;
 
@@ -1690,8 +1706,8 @@ $gradientTransitionGrayToWhite: linear-gradient(0deg, #f5f7f9 0%, #ffffff 100%);
     &__container {
       flex-direction: column;
       align-items: center;
-
-      gap: 30px;
+      justify-content: center;
+      gap: 5px;
     }
 
     &__menu {

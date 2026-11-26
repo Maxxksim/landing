@@ -120,6 +120,14 @@ body {
   color: #5584ff;
 }
 
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  min-width: 44px;
+}
+
 @media (width < 1440px) {
   .header__logo {
     margin-left: 84.5px;
@@ -178,35 +186,39 @@ body {
     position: relative;
     display: flex;
   }
+  .burger-menu__opening-btn, .burger-menu__closing-btn {
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    background: none;
+  }
   .burger-menu__opening-btn {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 9px;
   }
   .burger-menu__opening-btn_hidden {
     display: none;
   }
   .burger-menu__closing-btn {
-    width: 30px;
-    height: 30px;
     display: none;
   }
   .burger-menu__closing-btn_active {
-    display: initial;
+    display: flex;
   }
   .burger-menu__burger-line {
-    background-color: #ffffff;
-    width: 45px;
+    width: 34px;
     height: 2px;
+    background-color: #ffffff;
   }
   .burger-menu__cross-first-line, .burger-menu__cross-second-line {
     position: absolute;
-    left: 0;
-    top: 50%;
-    width: 30px;
+    width: 34px;
     height: 2px;
     background-color: #ffffff;
     border-radius: 2px;
+    transition: transform 0.3s ease-in-out;
   }
   .burger-menu__cross-first-line {
     transform: translateY(-50%) rotate(45deg);
@@ -668,8 +680,8 @@ body {
 .about__button {
   background: transparent;
   position: relative;
-  width: 35px;
-  height: 35px;
+  width: 44px;
+  height: 44px;
   border: 1px solid #8492af;
   border-radius: 50%;
 }
@@ -1331,7 +1343,8 @@ body {
   .footer__container {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    justify-content: center;
+    gap: 5px;
   }
   .footer__menu {
     margin-right: 0;
