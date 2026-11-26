@@ -335,6 +335,7 @@ body {
   }
 
   &__picture {
+    max-width: 882px;
     margin-top: 5.145%;
     margin-bottom: -7.486%;
     z-index: 0;
@@ -387,7 +388,7 @@ body {
 
 .grid-graph-background {
   background-image:
-    url("./../img/background/Graph.svg"),
+    url("./../img/background/Graph.png"),
     linear-gradient(
       90deg,
       #0e1a35 0%,
@@ -400,7 +401,7 @@ body {
     url("./../img/background/Grid.svg");
   background-repeat: no-repeat, no-repeat;
   background-size:
-    auto,
+    2131px 527px,
     100% 100%,
     auto;
   background-color: #0e1a35;

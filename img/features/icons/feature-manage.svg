@@ -1,3 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="76" viewBox="0 0 80 76">
-  <image id="Inteligentny_obiekt_wektorowy" data-name="Inteligentny obiekt wektorowy" width="80" height="76" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABMCAYAAAD6BTBNAAABR0lEQVR4nO3bPW7CQAAF4edVhJQyN0lNxRm4jBtKGi7DAVJRpeYmSRfJDdFKK6Uz2GMkUObr+RvZFLCvS5Lt/vKe5JBkk2QVjRmSnJL0x1137lq8zySvZpvkJ8m6tCvPeNPVZofSblvNsyl+5yGr8sRv/iEYEDIg9HLDw98e+hPc39fYK1wNeNx138/zWZe33V9Gn9NbGDIgZEDIgJABIQNCBoQMCBkQMiBkQMiAkAEhA0L1b83x32s0yisQMiBkQKi0sx6aZyjtoIzmOdWAfTsoo2lqs77UI1r1lFGSD2/nmwyt1bq1kyRJkiTpX3ErN51buYW4lYPcyi3ArRzkVo4yIGRAyK3cdW7lCLdyd2ZAyICQASEDQgaEDAgZEDIgZEDIgJABIQNCBoTcykFegZABIQNCbuUYt3KQWznArdxMf1u5XXf+BSNtRblNtD0PAAAAAElFTkSuQmCC"/>
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 38" width="92" height="92">
+	<style>
+		.s0 { fill: none;stroke: #5384ff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4 } 
+	</style>
+	<g id="Warstwa 2">
+		<g id="&lt;Group&gt;">
+			<path id="&lt;Path&gt;" class="s0" d="m38 36h-36v-12h36z"/>
+			<path id="&lt;Path&gt;" class="s0" d="m38 14h-36v-12h36z"/>
+		</g>
+	</g>
 </svg>

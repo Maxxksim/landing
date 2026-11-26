@@ -276,6 +276,7 @@ body {
   margin-top: 4.678%;
 }
 .hero__picture {
+  max-width: 882px;
   margin-top: 5.145%;
   margin-bottom: -7.486%;
   z-index: 0;
@@ -315,9 +316,9 @@ body {
   }
 }
 .grid-graph-background {
-  background-image: url("./../img/background/Graph.svg"), linear-gradient(90deg, #0e1a35 0%, #0e1a35 10%, rgba(14, 26, 53, 0) 40%, rgba(14, 26, 53, 0) 60%, #0e1a35 90%, #0e1a35 100%), url("./../img/background/Grid.svg");
+  background-image: url("./../img/background/Graph.png"), linear-gradient(90deg, #0e1a35 0%, #0e1a35 10%, rgba(14, 26, 53, 0) 40%, rgba(14, 26, 53, 0) 60%, #0e1a35 90%, #0e1a35 100%), url("./../img/background/Grid.svg");
   background-repeat: no-repeat, no-repeat;
-  background-size: auto, 100% 100%, auto;
+  background-size: 2131px 527px, 100% 100%, auto;
   background-color: #0e1a35;
 }
 .grid-graph-background_position_1 {
